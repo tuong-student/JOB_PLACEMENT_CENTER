@@ -1,0 +1,56 @@
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\bin\Debug\final_oosee.exe.config
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\bin\Debug\final_oosee.exe
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\bin\Debug\final_oosee.pdb
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\bin\Debug\FontAwesome.Sharp.dll
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.csproj.AssemblyReference.cache
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.csproj.SuggestedBindingRedirects.cache
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.Properties.Resources.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.csproj.GenerateResource.cache
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.csproj.CoreCompileInputs.cache
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.csproj.CopyComplete
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.exe
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.pdb
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.StudentHome.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.Account_Insert.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.account_SignIn.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.Account_SignUp.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.CV_Form.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.JobDetail_Form.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.MainForm_Student.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.EmployerInterface.MainForm_Employer.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.EmployerInterface.EmployerHome.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.EmployerInterface.Employer_EventManager.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.AdministratorInterface.MainForm_Administrator.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.AdministratorInterface.Administrator_ManageAccount.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.AdministratorInterface.Administrator_Statistic.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.EmployerInterface.Employer_InformationRegister.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.Notification.Register_Notifycation.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\Project\final_oosee\final_oosee\obj\Debug\final_oosee.EmployerInterface.Employer_StudentDetail.resources
+C:\Users\thanh\Downloads\final_oosee\final_oosee\bin\Debug\final_oosee.exe.config
+C:\Users\thanh\Downloads\final_oosee\final_oosee\bin\Debug\final_oosee.exe
+C:\Users\thanh\Downloads\final_oosee\final_oosee\bin\Debug\final_oosee.pdb
+C:\Users\thanh\Downloads\final_oosee\final_oosee\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.csproj.AssemblyReference.cache
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.csproj.SuggestedBindingRedirects.cache
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.AdministratorInterface.Administrator_ManageAccount.resources
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.AdministratorInterface.Administrator_Statistic.resources
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.AdministratorInterface.MainForm_Administrator.resources
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.EmployerInterface.EmployerHome.resources
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.EmployerInterface.Employer_EventManager.resources
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.EmployerInterface.Employer_InformationRegister.resources
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.EmployerInterface.Employer_StudentDetail.resources
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.EmployerInterface.MainForm_Employer.resources
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.Notification.Register_Notifycation.resources
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.Account_Insert.resources
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.account_SignIn.resources
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.Account_SignUp.resources
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.CV_Form.resources
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.MainForm_Student.resources
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.Properties.Resources.resources
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.JobDetail_Form.resources
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.StudentHome.resources
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.csproj.GenerateResource.cache
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.csproj.CoreCompileInputs.cache
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.csproj.CopyComplete
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.exe
+C:\Users\thanh\Downloads\final_oosee\final_oosee\obj\Debug\final_oosee.pdb

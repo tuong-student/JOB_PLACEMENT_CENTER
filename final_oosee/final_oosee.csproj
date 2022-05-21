@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA9FAB75-5A89-43F7-B698-16BAE81D2736}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>final_oosee</RootNamespace>
+    <AssemblyName>final_oosee</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.4\lib\net48\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdministratorInterface\Administrator_ManageAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministratorInterface\Administrator_ManageAccount.Designer.cs">
+      <DependentUpon>Administrator_ManageAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorInterface\Administrator_Statistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministratorInterface\Administrator_Statistic.Designer.cs">
+      <DependentUpon>Administrator_Statistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdministratorInterface\MainForm_Administrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministratorInterface\MainForm_Administrator.Designer.cs">
+      <DependentUpon>MainForm_Administrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployerInterface\EmployerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployerInterface\EmployerHome.Designer.cs">
+      <DependentUpon>EmployerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployerInterface\Employer_EventManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployerInterface\Employer_EventManager.Designer.cs">
+      <DependentUpon>Employer_EventManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployerInterface\Employer_InformationRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployerInterface\Employer_InformationRegister.Designer.cs">
+      <DependentUpon>Employer_InformationRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployerInterface\Employer_StudentDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployerInterface\Employer_StudentDetail.Designer.cs">
+      <DependentUpon>Employer_StudentDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployerInterface\MainForm_Employer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployerInterface\MainForm_Employer.Designer.cs">
+      <DependentUpon>MainForm_Employer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global\util.cs" />
+    <Compile Include="Notification\Register_Notifycation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notification\Register_Notifycation.Designer.cs">
+      <DependentUpon>Register_Notifycation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInterfaces\Account_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInterfaces\Account_Insert.Designer.cs">
+      <DependentUpon>Account_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInterfaces\Account_SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInterfaces\Account_SignIn.Designer.cs">
+      <DependentUpon>Account_SignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInterfaces\Account_SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInterfaces\Account_SignUp.Designer.cs">
+      <DependentUpon>Account_SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInterfaces\CV_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInterfaces\CV_Form.Designer.cs">
+      <DependentUpon>CV_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInterfaces\JobDetail_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInterfaces\JobDetail_Form.Designer.cs">
+      <DependentUpon>JobDetail_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInterfaces\MainForm_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInterfaces\MainForm_Student.Designer.cs">
+      <DependentUpon>MainForm_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentInterfaces\StudentHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInterfaces\StudentHome.Designer.cs">
+      <DependentUpon>StudentHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInterfaces\Testing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInterfaces\Testing.Designer.cs">
+      <DependentUpon>Testing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global\User.cs" />
+    <EmbeddedResource Include="AdministratorInterface\Administrator_ManageAccount.resx">
+      <DependentUpon>Administrator_ManageAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministratorInterface\Administrator_Statistic.resx">
+      <DependentUpon>Administrator_Statistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministratorInterface\MainForm_Administrator.resx">
+      <DependentUpon>MainForm_Administrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployerInterface\EmployerHome.resx">
+      <DependentUpon>EmployerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployerInterface\Employer_EventManager.resx">
+      <DependentUpon>Employer_EventManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployerInterface\Employer_InformationRegister.resx">
+      <DependentUpon>Employer_InformationRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployerInterface\Employer_StudentDetail.resx">
+      <DependentUpon>Employer_StudentDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployerInterface\MainForm_Employer.resx">
+      <DependentUpon>MainForm_Employer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notification\Register_Notifycation.resx">
+      <DependentUpon>Register_Notifycation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentInterfaces\Account_Insert.resx">
+      <DependentUpon>Account_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentInterfaces\Account_SignIn.resx">
+      <DependentUpon>Account_SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentInterfaces\Account_SignUp.resx">
+      <DependentUpon>Account_SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentInterfaces\CV_Form.resx">
+      <DependentUpon>CV_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentInterfaces\MainForm_Student.resx">
+      <DependentUpon>MainForm_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StudentInterfaces\JobDetail_Form.resx">
+      <DependentUpon>JobDetail_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentInterfaces\StudentHome.resx">
+      <DependentUpon>StudentHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instagram-accounts-statistics-on-graphs-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistics_basic_3_new.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
