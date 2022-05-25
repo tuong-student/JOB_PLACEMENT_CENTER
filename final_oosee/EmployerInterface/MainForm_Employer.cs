@@ -14,6 +14,8 @@ namespace final_oosee.EmployerInterface
     {
         EmployerHome employerHome = new EmployerHome() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
         Employer_EventManager employerEventManager = new Employer_EventManager() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+        Employer_InformationRegister employerInformationRegister = new Employer_InformationRegister() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+
         public MainForm_Employer()
         {
             InitializeComponent();
@@ -23,22 +25,27 @@ namespace final_oosee.EmployerInterface
         private void MainForm_Employer_Load(object sender, EventArgs e)
         {
             this.panelContent.Controls.Add(employerHome);
-            employerHome.Show();
-        }
-
-        private void homeButton_Click(object sender, EventArgs e)
-
-        {
-            this.panelContent.Controls.RemoveAt(0);
-            this.panelContent.Controls.Add(employerHome);
-            employerHome.Show();
-        }
-
-        private void iconButton2_Click(object sender, EventArgs e)
-        {
-            this.panelContent.Controls.RemoveAt(0);
             this.panelContent.Controls.Add(employerEventManager);
+            this.panelContent.Controls.Add(employerInformationRegister);
+            employerHome.Show();
+        }
+
+        private void homeBtn_Click(object sender, EventArgs e)
+        {
+            employerHome.Show();
+        }
+
+        private void eventManageBtn_Click(object sender, EventArgs e)
+        {
+            employerHome.Hide();
             employerEventManager.Show();
+        }
+
+        private void changeInformationBtn_Click(object sender, EventArgs e)
+        {
+            employerHome.Hide();
+            employerEventManager.Hide();
+            employerInformationRegister.Show();
         }
     }
 }

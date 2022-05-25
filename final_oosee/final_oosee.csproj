@@ -108,29 +108,29 @@
     <Compile Include="Notification\Register_Notifycation.Designer.cs">
       <DependentUpon>Register_Notifycation.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentInterfaces\Account_Insert.cs">
+    <Compile Include="Global\Account_Insert.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudentInterfaces\Account_Insert.Designer.cs">
+    <Compile Include="Global\Account_Insert.Designer.cs">
       <DependentUpon>Account_Insert.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentInterfaces\Account_SignIn.cs">
+    <Compile Include="Global\Account_SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudentInterfaces\Account_SignIn.Designer.cs">
+    <Compile Include="Global\Account_SignIn.Designer.cs">
       <DependentUpon>Account_SignIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentInterfaces\Account_SignUp.cs">
+    <Compile Include="Global\Account_SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudentInterfaces\Account_SignUp.Designer.cs">
+    <Compile Include="Global\Account_SignUp.Designer.cs">
       <DependentUpon>Account_SignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentInterfaces\CV_Form.cs">
+    <Compile Include="StudentInterfaces\Student_CV_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudentInterfaces\CV_Form.Designer.cs">
-      <DependentUpon>CV_Form.cs</DependentUpon>
+    <Compile Include="StudentInterfaces\Student_CV_Form.Designer.cs">
+      <DependentUpon>Student_CV_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="StudentInterfaces\JobDetail_Form.cs">
       <SubType>Form</SubType>
@@ -186,17 +186,17 @@
     <EmbeddedResource Include="Notification\Register_Notifycation.resx">
       <DependentUpon>Register_Notifycation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentInterfaces\Account_Insert.resx">
+    <EmbeddedResource Include="Global\Account_Insert.resx">
       <DependentUpon>Account_Insert.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentInterfaces\Account_SignIn.resx">
+    <EmbeddedResource Include="Global\Account_SignIn.resx">
       <DependentUpon>Account_SignIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentInterfaces\Account_SignUp.resx">
+    <EmbeddedResource Include="Global\Account_SignUp.resx">
       <DependentUpon>Account_SignUp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentInterfaces\CV_Form.resx">
-      <DependentUpon>CV_Form.cs</DependentUpon>
+    <EmbeddedResource Include="StudentInterfaces\Student_CV_Form.resx">
+      <DependentUpon>Student_CV_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentInterfaces\MainForm_Student.resx">
       <DependentUpon>MainForm_Student.cs</DependentUpon>

@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panelSideBar = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.changeInformationBtn = new FontAwesome.Sharp.IconButton();
             this.logOutButton = new FontAwesome.Sharp.IconButton();
             this.eventManageBtn = new FontAwesome.Sharp.IconButton();
-            this.homeButton = new FontAwesome.Sharp.IconButton();
+            this.homeBtn = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.sideBarButton = new FontAwesome.Sharp.IconButton();
             this.panelContent = new System.Windows.Forms.Panel();
@@ -43,10 +43,10 @@
             // panelSideBar
             // 
             this.panelSideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(3)))), ((int)(((byte)(30)))));
-            this.panelSideBar.Controls.Add(this.iconButton1);
+            this.panelSideBar.Controls.Add(this.changeInformationBtn);
             this.panelSideBar.Controls.Add(this.logOutButton);
             this.panelSideBar.Controls.Add(this.eventManageBtn);
-            this.panelSideBar.Controls.Add(this.homeButton);
+            this.panelSideBar.Controls.Add(this.homeBtn);
             this.panelSideBar.Controls.Add(this.panelLogo);
             this.panelSideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideBar.Location = new System.Drawing.Point(0, 0);
@@ -54,27 +54,28 @@
             this.panelSideBar.Size = new System.Drawing.Size(230, 753);
             this.panelSideBar.TabIndex = 1;
             // 
-            // iconButton1
+            // changeInformationBtn
             // 
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 30;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(0, 190);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.iconButton1.Size = new System.Drawing.Size(230, 60);
-            this.iconButton1.TabIndex = 4;
-            this.iconButton1.Text = "Change Information";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.changeInformationBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.changeInformationBtn.FlatAppearance.BorderSize = 0;
+            this.changeInformationBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.changeInformationBtn.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changeInformationBtn.ForeColor = System.Drawing.Color.White;
+            this.changeInformationBtn.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
+            this.changeInformationBtn.IconColor = System.Drawing.Color.White;
+            this.changeInformationBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.changeInformationBtn.IconSize = 30;
+            this.changeInformationBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.changeInformationBtn.Location = new System.Drawing.Point(0, 190);
+            this.changeInformationBtn.Name = "changeInformationBtn";
+            this.changeInformationBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.changeInformationBtn.Size = new System.Drawing.Size(230, 60);
+            this.changeInformationBtn.TabIndex = 4;
+            this.changeInformationBtn.Text = "Change Information";
+            this.changeInformationBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.changeInformationBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.changeInformationBtn.UseVisualStyleBackColor = true;
+            this.changeInformationBtn.Click += new System.EventHandler(this.changeInformationBtn_Click);
             // 
             // logOutButton
             // 
@@ -118,29 +119,29 @@
             this.eventManageBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.eventManageBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.eventManageBtn.UseVisualStyleBackColor = true;
-            this.eventManageBtn.Click += new System.EventHandler(this.iconButton2_Click);
+            this.eventManageBtn.Click += new System.EventHandler(this.eventManageBtn_Click);
             // 
-            // homeButton
+            // homeBtn
             // 
-            this.homeButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.homeButton.FlatAppearance.BorderSize = 0;
-            this.homeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.homeButton.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeButton.ForeColor = System.Drawing.Color.White;
-            this.homeButton.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.homeButton.IconColor = System.Drawing.Color.White;
-            this.homeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.homeButton.IconSize = 30;
-            this.homeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.homeButton.Location = new System.Drawing.Point(0, 70);
-            this.homeButton.Name = "homeButton";
-            this.homeButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.homeButton.Size = new System.Drawing.Size(230, 60);
-            this.homeButton.TabIndex = 1;
-            this.homeButton.Text = "Candidate List";
-            this.homeButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.homeButton.UseVisualStyleBackColor = true;
-            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
+            this.homeBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.homeBtn.FlatAppearance.BorderSize = 0;
+            this.homeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.homeBtn.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeBtn.ForeColor = System.Drawing.Color.White;
+            this.homeBtn.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.homeBtn.IconColor = System.Drawing.Color.White;
+            this.homeBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.homeBtn.IconSize = 30;
+            this.homeBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.homeBtn.Location = new System.Drawing.Point(0, 70);
+            this.homeBtn.Name = "homeBtn";
+            this.homeBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.homeBtn.Size = new System.Drawing.Size(230, 60);
+            this.homeBtn.TabIndex = 1;
+            this.homeBtn.Text = "Candidate List";
+            this.homeBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.homeBtn.UseVisualStyleBackColor = true;
+            this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
             // 
             // panelLogo
             // 
@@ -181,6 +182,7 @@
             this.ClientSize = new System.Drawing.Size(1382, 753);
             this.Controls.Add(this.panelContent);
             this.Controls.Add(this.panelSideBar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm_Employer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm_Employer";
@@ -196,10 +198,10 @@
         private System.Windows.Forms.Panel panelSideBar;
         private FontAwesome.Sharp.IconButton logOutButton;
         private FontAwesome.Sharp.IconButton eventManageBtn;
-        private FontAwesome.Sharp.IconButton homeButton;
+        private FontAwesome.Sharp.IconButton homeBtn;
         private System.Windows.Forms.Panel panelLogo;
         private FontAwesome.Sharp.IconButton sideBarButton;
         private System.Windows.Forms.Panel panelContent;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton changeInformationBtn;
     }
 }

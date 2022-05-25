@@ -21,7 +21,7 @@ namespace final_oosee
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Account_Insert());
+            Application.Run(new MainForm_Student());
         }
     }
 }

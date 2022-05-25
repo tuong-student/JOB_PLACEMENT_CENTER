@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panelSideBar = new System.Windows.Forms.Panel();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.panelContent = new System.Windows.Forms.Panel();
             this.statisticBtn = new FontAwesome.Sharp.IconButton();
             this.accountManageBtn = new FontAwesome.Sharp.IconButton();
             this.logOutButton = new FontAwesome.Sharp.IconButton();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.sideBarButton = new FontAwesome.Sharp.IconButton();
+            this.panelContent = new System.Windows.Forms.Panel();
             this.panelSideBar.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.SuspendLayout();
@@ -51,26 +51,6 @@
             this.panelSideBar.Name = "panelSideBar";
             this.panelSideBar.Size = new System.Drawing.Size(230, 753);
             this.panelSideBar.TabIndex = 2;
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.Controls.Add(this.sideBarButton);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(230, 70);
-            this.panelLogo.TabIndex = 0;
-            // 
-            // panelContent
-            // 
-            this.panelContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelContent.BackColor = System.Drawing.Color.White;
-            this.panelContent.Location = new System.Drawing.Point(236, 12);
-            this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(1134, 731);
-            this.panelContent.TabIndex = 3;
             // 
             // statisticBtn
             // 
@@ -93,6 +73,7 @@
             this.statisticBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.statisticBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.statisticBtn.UseVisualStyleBackColor = true;
+            this.statisticBtn.Click += new System.EventHandler(this.statisticBtn_Click);
             // 
             // accountManageBtn
             // 
@@ -115,6 +96,7 @@
             this.accountManageBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.accountManageBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.accountManageBtn.UseVisualStyleBackColor = true;
+            this.accountManageBtn.Click += new System.EventHandler(this.accountManageBtn_Click);
             // 
             // logOutButton
             // 
@@ -137,6 +119,15 @@
             this.logOutButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.logOutButton.UseVisualStyleBackColor = true;
             // 
+            // panelLogo
+            // 
+            this.panelLogo.Controls.Add(this.sideBarButton);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(230, 70);
+            this.panelLogo.TabIndex = 0;
+            // 
             // sideBarButton
             // 
             this.sideBarButton.FlatAppearance.BorderSize = 0;
@@ -150,12 +141,24 @@
             this.sideBarButton.TabIndex = 1;
             this.sideBarButton.UseVisualStyleBackColor = true;
             // 
+            // panelContent
+            // 
+            this.panelContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelContent.BackColor = System.Drawing.Color.White;
+            this.panelContent.Location = new System.Drawing.Point(236, 12);
+            this.panelContent.Name = "panelContent";
+            this.panelContent.Size = new System.Drawing.Size(1134, 731);
+            this.panelContent.TabIndex = 3;
+            // 
             // MainForm_Administrator
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1382, 753);
             this.Controls.Add(this.panelContent);
             this.Controls.Add(this.panelSideBar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm_Administrator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm_Administrator";

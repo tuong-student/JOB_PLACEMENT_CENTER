@@ -59,7 +59,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::final_oosee.Properties.Resources.Instagram_accounts_statistics_on_graphs_1;
-            this.pictureBox1.Location = new System.Drawing.Point(123, 81);
+            this.pictureBox1.Location = new System.Drawing.Point(106, 81);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(875, 525);
             this.pictureBox1.TabIndex = 1;
