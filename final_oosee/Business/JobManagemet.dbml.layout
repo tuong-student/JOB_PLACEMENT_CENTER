@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="JobManagemet">
+  <DataContextMoniker Name="/JobManagemetDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ca12a5c0-7acc-4f2d-b3c2-cc21cb557992" absoluteBounds="0.75, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/JobManagemetDataContext/EMPLOYER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ecd0d8e-7ff1-469a-82f8-c089698c2bef" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e94eab95-4efe-44ca-933e-f12fbb768cd0" absoluteBounds="3.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/JobManagemetDataContext/USER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="50768cc8-9f6a-4452-aec7-294e20cb4d42" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7da487f1-eb2e-4fa1-b9ae-3456d56bd37c" absoluteBounds="0.75, 3.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/JobManagemetDataContext/JOB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e5299ed-c10f-4c01-bfd0-cb23b68406ad" absoluteBounds="0.765, 4.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1681f981-a48a-4a30-a7bb-a159c7f3b99e" absoluteBounds="3.75, 3.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/JobManagemetDataContext/STUDENT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="47007d0e-cb95-4154-96ab-02b1e7841f74" absoluteBounds="3.765, 4.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e1021bc9-6672-4bb9-953e-30d6f4174062" absoluteBounds="6.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/JobManagemetDataContext/studentApplied" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d72db03a-73dd-4fc7-bb3d-7efba83403cd" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

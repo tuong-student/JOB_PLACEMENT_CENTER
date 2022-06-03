@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using final_oosee.Global;
 
 namespace final_oosee.EmployerInterface
 {
@@ -19,7 +20,9 @@ namespace final_oosee.EmployerInterface
 
         private void Employer_InformationRegister_Load(object sender, EventArgs e)
         {
-
+            txtComName.Text = util.emName;
+            txtAddress.Text = util.address;
+            txtPhoneNum.Text = util.phoneNumber;
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)

@@ -7,19 +7,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using final_oosee.Global;
+using final_oosee.Business;
+using final_oosee.Bridge;
 
 namespace final_oosee.EmployerInterface
 {
     public partial class MainForm_Employer : Form
     {
-        EmployerHome employerHome = new EmployerHome() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-        Employer_EventManager employerEventManager = new Employer_EventManager() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-        Employer_InformationRegister employerInformationRegister = new Employer_InformationRegister() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+        Employer_Candidate employerHome;
+        Employer_EventManager employerEventManager;
+        Employer_InformationRegister employerInformationRegister;
+
+        AbstractManager manager;
+        BLStudent blStudet;
+
+        List<JOB> jobs;
 
         public MainForm_Employer()
         {
             InitializeComponent();
+            blStudet = new BLStudent();
+            manager = new AbstractManager(blStudet);
+            string userName = "comB";
+            string role = "employer";
+            util.GetUserWhenLogin(userName, role);
+
+            jobs = util.GetJobList(util.user.ID);
+
+            //Give jobList to the orther form in order to get inf from the jobList
+            employerHome = new Employer_Candidate(jobs) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            employerEventManager = new Employer_EventManager(jobs) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true }; 
+            employerInformationRegister = new Employer_InformationRegister() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+
             this.BackColor = Color.FromArgb(251, 35, 75);
+            
         }
 
         private void MainForm_Employer_Load(object sender, EventArgs e)

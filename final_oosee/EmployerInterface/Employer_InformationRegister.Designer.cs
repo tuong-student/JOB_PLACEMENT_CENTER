@@ -31,19 +31,15 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancel = new FontAwesome.Sharp.IconButton();
             this.btnSave = new FontAwesome.Sharp.IconButton();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPhoneNum = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtComName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label8
@@ -73,41 +69,21 @@
             this.label7.Size = new System.Drawing.Size(0, 23);
             this.label7.TabIndex = 5;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(44, 296);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(262, 23);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Recruitment Requirement:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(44, 240);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(161, 23);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Job vacancies:";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(44, 184);
+            this.label4.Location = new System.Drawing.Point(136, 332);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(169, 23);
+            this.label4.Size = new System.Drawing.Size(159, 23);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Prepresentative:";
+            this.label4.Text = "Phone number:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(44, 129);
+            this.label3.Location = new System.Drawing.Point(136, 208);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 23);
             this.label3.TabIndex = 9;
@@ -117,11 +93,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(44, 81);
+            this.label2.Location = new System.Drawing.Point(136, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 23);
+            this.label2.Size = new System.Drawing.Size(181, 23);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Job Types:";
+            this.label2.Text = "Company Name:";
             // 
             // label1
             // 
@@ -179,58 +155,48 @@
             this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnSave.UseVisualStyleBackColor = false;
             // 
-            // textBox5
+            // txtPhoneNum
             // 
-            this.textBox5.Location = new System.Drawing.Point(269, 187);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(223, 22);
-            this.textBox5.TabIndex = 18;
+            this.txtPhoneNum.AllowDrop = true;
+            this.txtPhoneNum.Location = new System.Drawing.Point(396, 332);
+            this.txtPhoneNum.Multiline = true;
+            this.txtPhoneNum.Name = "txtPhoneNum";
+            this.txtPhoneNum.Size = new System.Drawing.Size(454, 39);
+            this.txtPhoneNum.TabIndex = 18;
             // 
-            // textBox4
+            // txtAddress
             // 
-            this.textBox4.Location = new System.Drawing.Point(287, 243);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(223, 22);
-            this.textBox4.TabIndex = 19;
+            this.txtAddress.AllowDrop = true;
+            this.txtAddress.Location = new System.Drawing.Point(396, 208);
+            this.txtAddress.MinimumSize = new System.Drawing.Size(4, 100);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(455, 100);
+            this.txtAddress.TabIndex = 23;
             // 
-            // textBox3
+            // txtComName
             // 
-            this.textBox3.Location = new System.Drawing.Point(336, 299);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(223, 22);
-            this.textBox3.TabIndex = 22;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(225, 132);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(223, 22);
-            this.textBox2.TabIndex = 23;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(225, 84);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(223, 22);
-            this.textBox1.TabIndex = 24;
+            this.txtComName.AllowDrop = true;
+            this.txtComName.Location = new System.Drawing.Point(396, 96);
+            this.txtComName.MinimumSize = new System.Drawing.Size(4, 100);
+            this.txtComName.Multiline = true;
+            this.txtComName.Name = "txtComName";
+            this.txtComName.Size = new System.Drawing.Size(455, 100);
+            this.txtComName.TabIndex = 24;
             // 
             // Employer_InformationRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(954, 662);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPhoneNum);
+            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.txtComName);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -249,18 +215,14 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconButton btnCancel;
         private FontAwesome.Sharp.IconButton btnSave;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPhoneNum;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtComName;
     }
 }

@@ -15,6 +15,7 @@ namespace final_oosee.EmployerInterface
         public Employer_StudentDetail()
         {
             InitializeComponent();
+            //When load, use information of util to show in CV zone
         }
     }
 }

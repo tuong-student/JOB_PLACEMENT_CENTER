@@ -18,7 +18,6 @@ namespace final_oosee
         public Account_Insert()
         {
             InitializeComponent();
-            Global.util.account_Insert = this;
             isSignIn = true;
         }
 

@@ -31,6 +31,10 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label5 = new System.Windows.Forms.Label();
@@ -45,23 +49,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cbSearch = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataJobEvent = new System.Windows.Forms.DataGridView();
-            this.jobIndex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.jobName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.companyName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.jobSalary = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.jobExpire = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvJobEvent = new System.Windows.Forms.DataGridView();
             this.btnConfirm = new FontAwesome.Sharp.IconButton();
             this.btnCancel = new FontAwesome.Sharp.IconButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panelSearch.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataJobEvent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvJobEvent)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -96,6 +91,38 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(381, 614);
             this.panel1.TabIndex = 1;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "dd;;mm;;yy";
+            this.dateTimePicker1.Location = new System.Drawing.Point(153, 237);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 8;
+            // 
+            // textBox4
+            // 
+            this.textBox4.AllowDrop = true;
+            this.textBox4.Location = new System.Drawing.Point(185, 290);
+            this.textBox4.MinimumSize = new System.Drawing.Size(0, 100);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(168, 100);
+            this.textBox4.TabIndex = 7;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(153, 189);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.TabIndex = 7;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(153, 151);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(184, 22);
+            this.textBox1.TabIndex = 7;
             // 
             // iconButton2
             // 
@@ -289,63 +316,22 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Gray;
-            this.panel2.Controls.Add(this.dataJobEvent);
+            this.panel2.Controls.Add(this.dgvJobEvent);
             this.panel2.Location = new System.Drawing.Point(12, 203);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(718, 399);
             this.panel2.TabIndex = 5;
             // 
-            // dataJobEvent
+            // dgvJobEvent
             // 
-            this.dataJobEvent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataJobEvent.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.jobIndex,
-            this.jobName,
-            this.companyName,
-            this.jobSalary,
-            this.jobExpire});
-            this.dataJobEvent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataJobEvent.Location = new System.Drawing.Point(0, 0);
-            this.dataJobEvent.Name = "dataJobEvent";
-            this.dataJobEvent.RowHeadersWidth = 51;
-            this.dataJobEvent.RowTemplate.Height = 24;
-            this.dataJobEvent.Size = new System.Drawing.Size(718, 399);
-            this.dataJobEvent.TabIndex = 1;
-            // 
-            // jobIndex
-            // 
-            this.jobIndex.HeaderText = "STT";
-            this.jobIndex.MinimumWidth = 6;
-            this.jobIndex.Name = "jobIndex";
-            this.jobIndex.Width = 125;
-            // 
-            // jobName
-            // 
-            this.jobName.HeaderText = "Tên công việc";
-            this.jobName.MinimumWidth = 6;
-            this.jobName.Name = "jobName";
-            this.jobName.Width = 125;
-            // 
-            // companyName
-            // 
-            this.companyName.HeaderText = "Tên công ty";
-            this.companyName.MinimumWidth = 6;
-            this.companyName.Name = "companyName";
-            this.companyName.Width = 125;
-            // 
-            // jobSalary
-            // 
-            this.jobSalary.HeaderText = "Lương";
-            this.jobSalary.MinimumWidth = 6;
-            this.jobSalary.Name = "jobSalary";
-            this.jobSalary.Width = 125;
-            // 
-            // jobExpire
-            // 
-            this.jobExpire.HeaderText = "Hạn ứng tuyển";
-            this.jobExpire.MinimumWidth = 6;
-            this.jobExpire.Name = "jobExpire";
-            this.jobExpire.Width = 125;
+            this.dgvJobEvent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvJobEvent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvJobEvent.Location = new System.Drawing.Point(0, 0);
+            this.dgvJobEvent.Name = "dgvJobEvent";
+            this.dgvJobEvent.RowHeadersWidth = 51;
+            this.dgvJobEvent.RowTemplate.Height = 24;
+            this.dgvJobEvent.Size = new System.Drawing.Size(718, 399);
+            this.dgvJobEvent.TabIndex = 1;
             // 
             // btnConfirm
             // 
@@ -390,40 +376,11 @@
             this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnCancel.UseVisualStyleBackColor = false;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(153, 151);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 7;
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(153, 189);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 7;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(185, 290);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 7;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CustomFormat = "dd;;mm;;yy";
-            this.dateTimePicker1.Location = new System.Drawing.Point(153, 237);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 8;
             // 
             // Employer_EventManager
             // 
@@ -446,7 +403,7 @@
             this.panelSearch.ResumeLayout(false);
             this.panelSearch.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataJobEvent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvJobEvent)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -463,12 +420,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbSearch;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataJobEvent;
-        private System.Windows.Forms.DataGridViewTextBoxColumn jobIndex;
-        private System.Windows.Forms.DataGridViewTextBoxColumn jobName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn companyName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn jobSalary;
-        private System.Windows.Forms.DataGridViewTextBoxColumn jobExpire;
+        private System.Windows.Forms.DataGridView dgvJobEvent;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;

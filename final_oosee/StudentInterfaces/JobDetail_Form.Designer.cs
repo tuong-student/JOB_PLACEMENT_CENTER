@@ -54,7 +54,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(777, 189);
+            this.panel1.Size = new System.Drawing.Size(756, 189);
             this.panel1.TabIndex = 0;
             // 
             // iconButton2
@@ -147,7 +147,7 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(12, 215);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(777, 564);
+            this.panel2.Size = new System.Drawing.Size(756, 564);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
