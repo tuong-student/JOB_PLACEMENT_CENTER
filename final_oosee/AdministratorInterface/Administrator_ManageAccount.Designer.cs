@@ -29,18 +29,13 @@
         private void InitializeComponent()
         {
             this.panelSearch = new System.Windows.Forms.Panel();
+            this.btnSearch01 = new FontAwesome.Sharp.IconButton();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.cbSearch = new System.Windows.Forms.ComboBox();
-            this.btnSearch01 = new FontAwesome.Sharp.IconButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataAccount = new System.Windows.Forms.DataGridView();
-            this.jobIndex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accountName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accountRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accountCompany = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accountCreateDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.deleteAccountBtn = new FontAwesome.Sharp.IconButton();
             this.panelSearch.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -56,6 +51,20 @@
             this.panelSearch.Name = "panelSearch";
             this.panelSearch.Size = new System.Drawing.Size(331, 44);
             this.panelSearch.TabIndex = 2;
+            // 
+            // btnSearch01
+            // 
+            this.btnSearch01.FlatAppearance.BorderSize = 0;
+            this.btnSearch01.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch01.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.btnSearch01.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.btnSearch01.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSearch01.IconSize = 30;
+            this.btnSearch01.Location = new System.Drawing.Point(3, 7);
+            this.btnSearch01.Name = "btnSearch01";
+            this.btnSearch01.Size = new System.Drawing.Size(34, 30);
+            this.btnSearch01.TabIndex = 2;
+            this.btnSearch01.UseVisualStyleBackColor = true;
             // 
             // txtSearch
             // 
@@ -80,20 +89,6 @@
             this.cbSearch.Size = new System.Drawing.Size(331, 41);
             this.cbSearch.TabIndex = 4;
             this.cbSearch.Text = "--Role--";
-            // 
-            // btnSearch01
-            // 
-            this.btnSearch01.FlatAppearance.BorderSize = 0;
-            this.btnSearch01.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch01.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.btnSearch01.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.btnSearch01.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSearch01.IconSize = 30;
-            this.btnSearch01.Location = new System.Drawing.Point(3, 7);
-            this.btnSearch01.Name = "btnSearch01";
-            this.btnSearch01.Size = new System.Drawing.Size(34, 30);
-            this.btnSearch01.TabIndex = 2;
-            this.btnSearch01.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
@@ -138,12 +133,6 @@
             // dataAccount
             // 
             this.dataAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataAccount.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.jobIndex,
-            this.accountName,
-            this.accountRole,
-            this.accountCompany,
-            this.accountCreateDate});
             this.dataAccount.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataAccount.Location = new System.Drawing.Point(0, 0);
             this.dataAccount.Name = "dataAccount";
@@ -151,41 +140,6 @@
             this.dataAccount.RowTemplate.Height = 24;
             this.dataAccount.Size = new System.Drawing.Size(1237, 419);
             this.dataAccount.TabIndex = 0;
-            // 
-            // jobIndex
-            // 
-            this.jobIndex.HeaderText = "STT";
-            this.jobIndex.MinimumWidth = 6;
-            this.jobIndex.Name = "jobIndex";
-            this.jobIndex.Width = 125;
-            // 
-            // accountName
-            // 
-            this.accountName.HeaderText = "Họ tên";
-            this.accountName.MinimumWidth = 6;
-            this.accountName.Name = "accountName";
-            this.accountName.Width = 125;
-            // 
-            // accountRole
-            // 
-            this.accountRole.HeaderText = "Vai trò";
-            this.accountRole.MinimumWidth = 6;
-            this.accountRole.Name = "accountRole";
-            this.accountRole.Width = 125;
-            // 
-            // accountCompany
-            // 
-            this.accountCompany.HeaderText = "Công ty";
-            this.accountCompany.MinimumWidth = 6;
-            this.accountCompany.Name = "accountCompany";
-            this.accountCompany.Width = 125;
-            // 
-            // accountCreateDate
-            // 
-            this.accountCreateDate.HeaderText = "Ngày tạo tài khoản";
-            this.accountCreateDate.MinimumWidth = 6;
-            this.accountCreateDate.Name = "accountCreateDate";
-            this.accountCreateDate.Width = 125;
             // 
             // deleteAccountBtn
             // 
@@ -242,11 +196,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataAccount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn jobIndex;
-        private System.Windows.Forms.DataGridViewTextBoxColumn accountName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn accountRole;
-        private System.Windows.Forms.DataGridViewTextBoxColumn accountCompany;
-        private System.Windows.Forms.DataGridViewTextBoxColumn accountCreateDate;
         private FontAwesome.Sharp.IconButton deleteAccountBtn;
     }
 }

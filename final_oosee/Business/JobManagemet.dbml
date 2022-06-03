@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Job_Management" Class="JobManagemetDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-I5VGF87;Initial Catalog=Job_Management;Integrated Security=True" SettingsObjectName="final_oosee.Properties.Settings" SettingsPropertyName="Job_ManagementConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.EMPLOYER" Member="EMPLOYERs">
+    <Type Name="EMPLOYER">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="employerName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="phoneNumber" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="userID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[USER]" Member="USERs">
+    <Type Name="USER">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="role" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.JOB" Member="JOBs">
+    <Type Name="JOB">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="employerID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="jobName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="jobDescription" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="wagePerHour" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.STUDENT" Member="STUDENTs">
+    <Type Name="STUDENT">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fullName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dateOfBirth" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="phoneNumber" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="healthCondition" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="additionalCondition" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="userID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.studentApplied" Member="studentApplieds">
+    <Type Name="studentApplied">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="studentID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="jobID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="jobName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

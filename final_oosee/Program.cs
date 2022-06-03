@@ -7,6 +7,7 @@ using final_oosee.EmployerInterface;
 using final_oosee.StudentInterfaces;
 using final_oosee.AdministratorInterface;
 using final_oosee.Notification;
+using final_oosee.Global;
 
 
 namespace final_oosee
@@ -21,7 +22,7 @@ namespace final_oosee
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm_Student());
+            Application.Run(new MainForm_Employer());
         }
     }
 }

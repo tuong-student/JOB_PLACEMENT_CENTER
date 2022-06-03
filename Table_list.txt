@@ -1,0 +1,20 @@
+USER:
+ID, username, password, type of account
+
+STUDENT:
+ID, full name, date of birth, address, health condition, additional condition, gender, phone number,
+
+EMPLOYER:
+ID, Employer name, address, phone
+
+JOB: (danh sách các việc hiện có)
+ID, Employer ID, Job name, Job Descripiton, place, salary
+
+SAVE JOB LIST: (danh sách các việc mà sinh viên đã lưu)
+Student ID, Job ID
+
+CV HAVE APPLY: (danh sách các việc mà sinh viên đã nộp CV)
+Student ID, Job ID
+
+STUDENT APPLIED: (danh sách các sinh viên đã apply vào công việc đó)
+Student ID, Employ ID, Job ID

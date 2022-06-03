@@ -173,13 +173,13 @@
             this.panelContent.BackColor = System.Drawing.Color.White;
             this.panelContent.Location = new System.Drawing.Point(236, 12);
             this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(1134, 731);
+            this.panelContent.Size = new System.Drawing.Size(1194, 731);
             this.panelContent.TabIndex = 2;
             // 
             // MainForm_Employer
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1382, 753);
+            this.ClientSize = new System.Drawing.Size(1442, 753);
             this.Controls.Add(this.panelContent);
             this.Controls.Add(this.panelSideBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

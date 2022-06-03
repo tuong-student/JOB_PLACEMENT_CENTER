@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Linq;
+using final_oosee.Business;
 
 namespace final_oosee
 {

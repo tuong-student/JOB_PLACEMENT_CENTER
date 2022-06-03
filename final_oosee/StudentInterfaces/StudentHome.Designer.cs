@@ -231,7 +231,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panelSearch;
-        private System.Windows.Forms.Button button1;
         private FontAwesome.Sharp.IconButton searchBtn;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.ComboBox cbSearch;
