@@ -17,11 +17,6 @@ namespace final_oosee
             InitializeComponent();
         }
 
-        private void btnSignUp_Click(object sender, EventArgs e)
-        {
-
-        }
-
         public String txtUserName
         {
             get { return txtUsername_signIn.Text.ToString(); }
@@ -32,21 +27,21 @@ namespace final_oosee
             get { return txtPassword_signIn.Text.ToString(); }
         }
 
-        public String typeOfAccount{ get; set; }
+        public String role { get; set; }
 
         private void radioBtn_CheckedChanged(object sender, EventArgs e)
         {
             if (radioBtnStudent.Checked)
             {
-                typeOfAccount = "student";
+                role = "student";
             }
             if (radioBtnAdmin.Checked)
             {
-                typeOfAccount = "admin";
+                role = "admin";
             }
             if (radioBtnEmployer.Checked)
             {
-                typeOfAccount = "employer";
+                role = "employer";
             }
         }
     }

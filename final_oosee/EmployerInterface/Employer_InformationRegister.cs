@@ -8,14 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using final_oosee.Global;
+using final_oosee.Bridge;
+using final_oosee.Business;
 
 namespace final_oosee.EmployerInterface
 {
     public partial class Employer_InformationRegister : Form
     {
+        AbstractManager manager;
+        BLEmployer blEmplyer;
+
         public Employer_InformationRegister()
         {
             InitializeComponent();
+            blEmplyer = new BLEmployer();
+            manager = new AbstractManager(blEmplyer);
         }
 
         private void Employer_InformationRegister_Load(object sender, EventArgs e)
@@ -25,14 +32,14 @@ namespace final_oosee.EmployerInterface
             txtPhoneNum.Text = util.phoneNumber;
         }
 
-        private void textBox6_TextChanged(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
+            util.emName = txtComName.Text.Trim();
+            util.address = txtAddress.Text.Trim();
+            util.phoneNumber = txtPhoneNum.Text.Trim();
 
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
+            manager.Update();
+            Employer_InformationRegister_Load(sender, e);
         }
     }
 }

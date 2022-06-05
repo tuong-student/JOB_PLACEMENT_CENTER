@@ -73,7 +73,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(136, 332);
+            this.label4.Location = new System.Drawing.Point(186, 351);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(159, 23);
             this.label4.TabIndex = 8;
@@ -83,7 +83,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(136, 208);
+            this.label3.Location = new System.Drawing.Point(186, 227);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 23);
             this.label3.TabIndex = 9;
@@ -93,7 +93,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(136, 96);
+            this.label2.Location = new System.Drawing.Point(186, 115);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(181, 23);
             this.label2.TabIndex = 10;
@@ -124,12 +124,11 @@
             this.btnCancel.IconColor = System.Drawing.Color.White;
             this.btnCancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCancel.IconSize = 30;
-            this.btnCancel.Location = new System.Drawing.Point(521, 605);
+            this.btnCancel.Location = new System.Drawing.Point(491, 570);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(134, 45);
+            this.btnCancel.Size = new System.Drawing.Size(164, 58);
             this.btnCancel.TabIndex = 11;
             this.btnCancel.Text = "Cancel";
-            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnCancel.UseVisualStyleBackColor = false;
             // 
@@ -146,19 +145,20 @@
             this.btnSave.IconColor = System.Drawing.Color.White;
             this.btnSave.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSave.IconSize = 30;
-            this.btnSave.Location = new System.Drawing.Point(336, 605);
+            this.btnSave.Location = new System.Drawing.Point(306, 570);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(112, 45);
+            this.btnSave.Size = new System.Drawing.Size(142, 58);
             this.btnSave.TabIndex = 12;
             this.btnSave.Text = "Save";
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtPhoneNum
             // 
             this.txtPhoneNum.AllowDrop = true;
-            this.txtPhoneNum.Location = new System.Drawing.Point(396, 332);
+            this.txtPhoneNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhoneNum.Location = new System.Drawing.Point(446, 351);
             this.txtPhoneNum.Multiline = true;
             this.txtPhoneNum.Name = "txtPhoneNum";
             this.txtPhoneNum.Size = new System.Drawing.Size(454, 39);
@@ -167,7 +167,8 @@
             // txtAddress
             // 
             this.txtAddress.AllowDrop = true;
-            this.txtAddress.Location = new System.Drawing.Point(396, 208);
+            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.Location = new System.Drawing.Point(446, 227);
             this.txtAddress.MinimumSize = new System.Drawing.Size(4, 100);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
@@ -177,7 +178,8 @@
             // txtComName
             // 
             this.txtComName.AllowDrop = true;
-            this.txtComName.Location = new System.Drawing.Point(396, 96);
+            this.txtComName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtComName.Location = new System.Drawing.Point(446, 115);
             this.txtComName.MinimumSize = new System.Drawing.Size(4, 100);
             this.txtComName.Multiline = true;
             this.txtComName.Name = "txtComName";

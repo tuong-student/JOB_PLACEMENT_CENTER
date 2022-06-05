@@ -4,6 +4,7 @@ using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using final_oosee.Business;
 using System.Data.Linq;
 
@@ -14,7 +15,11 @@ namespace final_oosee.Global
     {
         public static USER user;
 
-        public static int userId;
+        public static string userName;
+        public static string password;
+        public static string role;
+
+        public static int userID;
         public static int studentID;
         public static int employerID;
         public static int jobID;
@@ -29,141 +34,71 @@ namespace final_oosee.Global
         public static string phoneNumber;
         public static string healthCondition;
         public static string additionalCondition;
-        public static string password;
-        public static string role;
+        public static string jobStatus;
 
         public static string emName;
         public static string stfullName;
         public static string jobName;
-        public static string userName;
 
-        public static Table<EMPLOYER> employerList;
-        public static Table<STUDENT> studentList;
-        public static Table<JOB> jobList;
-        public static Table<USER> userList;
-        public static Table<studentApplied> studentAppliedList;
+        public static Table<EMPLOYER> employerTable;
+        public static Table<STUDENT> studentTable;
+        public static Table<JOB> jobTable;
+        public static Table<USER> userTable;
+        public static Table<studentApplied> studentAppliedTable;
 
+        static JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
 
         public static EMPLOYER GetEmployer(int employerID)
         {
-            if (employerList == null)
-            {
-                employerList = (Table<EMPLOYER>)GetTableObjectClass<EMPLOYER>.GetTable();
-            }
-
-            foreach(EMPLOYER em in employerList)
-            {
-                if(em.ID == employerID)
-                {
-                    return em;
-                }
-            }
-
-            return null;
+            return (EMPLOYER)jobManagemetDataContext.EMPLOYERs.Where(P => P.ID == employerID);
         }
 
         public static EMPLOYER GetEmployerBaseOnUserID(int userID)
         {
-            if (employerList == null)
-            {
-                employerList = (Table<EMPLOYER>)GetTableObjectClass<EMPLOYER>.GetTable();
-            }
-
-            foreach (EMPLOYER em in employerList)
-            {
-                if (em.userID == userID)
-                {
-                    return em;
-                }
-            }
-
-            return null;
+            return (EMPLOYER)jobManagemetDataContext.EMPLOYERs.Where(P => P.userID == userID).Single();
         }
 
         public static STUDENT GetStudent(int studentID)
         {
-            return null;
+            STUDENT stu = new STUDENT();
+            stu = (STUDENT)jobManagemetDataContext.STUDENTs.Where(P => P.ID == studentID);
+
+            util.studentID = stu.ID;
+            util.stfullName = stu.fullName;
+            util.stDateOfBirth = stu.dateOfBirth;
+            util.address = stu.address;
+            util.gender = stu.gender;
+            util.phoneNumber = stu.phoneNumber;
+            util.healthCondition = stu.healthCondition;
+            util.additionalCondition = stu.additionalCondition;
+            return stu;
         }
 
         public static STUDENT GetStudentBaseOnUserID(int userID)
         {
-            if (studentList == null)
-            {
-                studentList = (Table<STUDENT>)GetTableObjectClass<STUDENT>.GetTable();
-            }
-
-            foreach (STUDENT st in studentList)
-            {
-                if (st.userID == userID)
-                {
-                    return st;
-                }
-            }
-
-            return null;
+            return (STUDENT) jobManagemetDataContext.STUDENTs.Where(P => P.userID == userID).Single();
         }
 
         public static JOB GetJob(int jobID)
         {
-            return null;
+            return (JOB) jobManagemetDataContext.JOBs.Where(P => P.ID == jobID).Single();
         }
 
         public static List<JOB> GetJobList(int emID)
         {
-            if(jobList == null)
-            {
-                jobList = (Table<JOB>)GetTableObjectClass<JOB>.GetTable();
-            }
+            var jobs = jobManagemetDataContext.JOBs.Where(P => P.employerID == emID);
 
-            List<JOB> jobs = new List<JOB>();
-            foreach(JOB job in jobList)
-            {
-                if(job.employerID == emID)
-                {
-                    jobs.Add(job);
-                }
-            }
-
-            return jobs;
+            return jobs.ToList();
         }
 
         public static USER GetUser(int userID)
         {
-            if (userList == null)
-            {
-                userList = (Table<USER>) GetTableObjectClass<USER>.GetTable();
-            }
-
-            foreach(USER user in userList)
-            {
-                if(user.ID == userID)
-                {
-                    util.user = user;
-                    return user;
-                }
-            }
-
-            return null;
+            return (USER)jobManagemetDataContext.USERs.Where(P => P.ID == userID).Single();
         }
 
-        public static USER GetUserWhenLogin(string userName, string role)
+        public static USER GetUserWhenLogin(string userName)
         {
-            if (userList == null)
-            {
-                userList = (Table<USER>)GetTableObjectClass<USER>.GetTable();
-            }
-
-            foreach (USER user in userList)
-            {
-                if (user.username == userName)
-                {
-                    if(user.role == role)
-                    {
-                        util.user = user;
-                    }
-                }
-            }
-
+            util.user = (USER)jobManagemetDataContext.USERs.Where(P => P.username.Contains(userName)).Single();
             if (util.user == null)
             {
                 //TODO: show error
@@ -171,51 +106,31 @@ namespace final_oosee.Global
                 return null;
             }
 
-            switch (role)
-            {
-                case "student":
-                    STUDENT stu = util.GetStudentBaseOnUserID(util.user.ID);
-                    util.studentID = stu.ID;
-                    util.stfullName = stu.fullName;
-                    util.stDateOfBirth = stu.dateOfBirth;
-                    util.address = stu.address;
-                    util.gender = stu.gender;
-                    util.phoneNumber = stu.phoneNumber;
-                    util.healthCondition = stu.healthCondition;
-                    util.additionalCondition = stu.additionalCondition;
-                    break;
-                case "admin":
-
-                    break;
-                case "employer":
-                    EMPLOYER em = util.GetEmployerBaseOnUserID(util.user.ID);
-                    util.employerID = em.ID;
-                    util.emName = em.employerName;
-                    util.address = em.address;
-                    util.phoneNumber = em.phoneNumber;
-                    break;
-            }
-
             return util.user;
         }
 
         public static List<studentApplied> GetStudentAppliedList(int jobID)
         {
-            List<studentApplied> studentApplieds = new List<studentApplied>();
-            if (studentAppliedList == null)
-            {
-                studentAppliedList = (Table<studentApplied>) GetTableObjectClass<studentApplied>.GetTable();
-            }
+            var result = jobManagemetDataContext.studentApplieds.Where(P => P.jobID == jobID);
 
-            foreach (studentApplied stApplied in studentAppliedList)
-            {
-                if (stApplied.jobID == jobID)
-                {
-                    studentApplieds.Add(stApplied);
-                }
-            }
+            return result.ToList();
+        }
 
-            return studentApplieds;
+        public static studentApplied GetStudentApplied(int studentAppliedID)
+        {
+            return (studentApplied) jobManagemetDataContext.studentApplieds.Where(p => p.ID == studentAppliedID).Single();
+        }
+
+        public static List<studentApplied> SearchStudentAppliedBaseOnKeyWord(string keyWord, int jobID)
+        {
+            var result = jobManagemetDataContext.studentApplieds.Where(P => P.jobID == jobID && P.jobName.Contains(keyWord));
+            return result.ToList();
+        }
+
+        public static List<JOB> SearchJobBaseOnKeyWord(string keyWord, int emID)
+        {
+            var result = jobManagemetDataContext.JOBs.Where(P => P.employerID == emID && (P.jobName.Contains(keyWord) || P.jobDescription.Contains(keyWord) || P.address.Contains(keyWord)));
+            return result.ToList();
         }
 
         public static void ShowError()

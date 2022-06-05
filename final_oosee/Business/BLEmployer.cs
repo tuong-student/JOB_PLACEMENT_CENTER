@@ -4,6 +4,7 @@ using System.Data.Linq;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using final_oosee.Global;
 
 namespace final_oosee.Business
@@ -31,7 +32,7 @@ namespace final_oosee.Business
         {
             JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
             EMPLOYER em = new EMPLOYER();
-            em.employerName = util.stfullName;
+            em.employerName = util.emName;
             em.address = util.address;
             em.phoneNumber = util.phoneNumber;
             em.userID = util.userID;
@@ -41,23 +42,26 @@ namespace final_oosee.Business
             return true;
         }
 
+        public void Search(DataGridView dgv, string searchKeyWord)
+        {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
+            var result = jobManagemetDataContext.EMPLOYERs.Where(P => P.employerName.Contains(searchKeyWord));
+            dgv.DataSource = result.ToList();
+        }
+
         public bool Update()
         {
             JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
-            var stQuery = (from st in jobManagemetDataContext.STUDENTs
-                           where st.ID == util.studentID
+            var stQuery = (from st in jobManagemetDataContext.EMPLOYERs
+                           where st.ID == util.employerID
                            select st).SingleOrDefault();
 
-            if (stQuery == null)
+            if (stQuery != null)
             {
-                stQuery.fullName = util.stfullName;
-                stQuery.dateOfBirth = util.stDateOfBirth;
+                stQuery.employerName = util.emName;
                 stQuery.address = util.address;
-                stQuery.gender = util.gender;
-                stQuery.healthCondition = util.healthCondition;
                 stQuery.phoneNumber = util.phoneNumber;
-                stQuery.additionalCondition = util.additionalCondition;
-                stQuery.userID = util.userID;
+                stQuery.userID = util.user.ID;
 
                 jobManagemetDataContext.SubmitChanges();
             }

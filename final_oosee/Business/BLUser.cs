@@ -4,6 +4,7 @@ using System.Data.Linq;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using final_oosee.Global;
 
 namespace final_oosee.Business
@@ -40,6 +41,13 @@ namespace final_oosee.Business
             return true;
         }
 
+        public void Search(DataGridView dgv, string searchKeyWord)
+        {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
+            var result = jobManagemetDataContext.USERs.Where(P => P.username.Contains(searchKeyWord) || P.role.Contains(searchKeyWord));
+            dgv.DataSource = result.ToList();
+        }
+
         public bool Update()
         {
             JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
@@ -47,7 +55,7 @@ namespace final_oosee.Business
                            where st.ID == util.userID
                            select st).SingleOrDefault();
 
-            if (stQuery == null)
+            if (stQuery != null)
             {
                 stQuery.username = util.userName;
                 stQuery.password = util.password;

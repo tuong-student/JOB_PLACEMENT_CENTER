@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using final_oosee.Global;
+using final_oosee.FactoryMethod;
 
 namespace final_oosee
 {
@@ -61,8 +63,32 @@ namespace final_oosee
                 return;
             }
 
+            //Check if account is correct
+
+            string username = "comA";
+            //Sign in success
+            util.userName = username;
+            util.user = util.GetUserWhenLogin(util.userName);
+
+            this.Hide();
+            //Create User (Set util and show form)
+            switch(util.user.role)
+            {
+                case "student":
+                    AbstractUserClass student = new StudentClass();
+                    student.SetUtil();
+                    break;
+                case "employer":
+                    AbstractUserClass employer = new EmployerClass();
+                    employer.SetUtil();
+                    break;
+                case "admin":
+                    AbstractUserClass admin = new AdminClass();
+                    admin.SetUtil();
+                    break;
+            }
+            this.Close();
             //Get information from sign in form
-            MessageBox.Show(signInForm.txtUserName);
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)
@@ -71,6 +97,31 @@ namespace final_oosee
             {
                 ReplaceSignUpForm();
                 return;
+            }
+
+            //Create new user
+            string username = "student5";
+            string password = "student5";
+            string role = "student";
+
+            util.userName = username;
+            util.password = password;
+            util.role = role;
+
+            switch (util.role)
+            {
+                case "student":
+                    AbstractUserClass student = new StudentClass();
+                    student.InsertUser();
+                    break;
+                case "employer":
+                    AbstractUserClass employer = new EmployerClass();
+                    employer.InsertUser();
+                    break;
+                case "admin":
+                    AbstractUserClass admin = new AdminClass();
+                    admin.InsertUser();
+                    break;
             }
         }
     }

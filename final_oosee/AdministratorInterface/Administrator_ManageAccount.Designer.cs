@@ -31,15 +31,15 @@
             this.panelSearch = new System.Windows.Forms.Panel();
             this.btnSearch01 = new FontAwesome.Sharp.IconButton();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.cbSearch = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataAccount = new System.Windows.Forms.DataGridView();
+            this.dgvUserData = new System.Windows.Forms.DataGridView();
             this.deleteAccountBtn = new FontAwesome.Sharp.IconButton();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelSearch.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataAccount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUserData)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSearch
@@ -76,44 +76,19 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(257, 35);
             this.txtSearch.TabIndex = 1;
-            // 
-            // cbSearch
-            // 
-            this.cbSearch.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSearch.FormattingEnabled = true;
-            this.cbSearch.Items.AddRange(new object[] {
-            "Students Registered",
-            "Employers"});
-            this.cbSearch.Location = new System.Drawing.Point(373, 13);
-            this.cbSearch.Name = "cbSearch";
-            this.cbSearch.Size = new System.Drawing.Size(331, 41);
-            this.cbSearch.TabIndex = 4;
-            this.cbSearch.Text = "--Role--";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Front End",
-            "Back End",
-            "Data"});
-            this.comboBox1.Location = new System.Drawing.Point(720, 13);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(303, 41);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.Text = "--Job--";
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1042, 8);
+            this.button1.Location = new System.Drawing.Point(353, 11);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 45);
+            this.button1.Size = new System.Drawing.Size(166, 45);
             this.button1.TabIndex = 5;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = false;
@@ -124,22 +99,23 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Controls.Add(this.dataAccount);
+            this.panel1.Controls.Add(this.dgvUserData);
             this.panel1.Location = new System.Drawing.Point(16, 143);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1237, 419);
             this.panel1.TabIndex = 6;
             // 
-            // dataAccount
+            // dgvUserData
             // 
-            this.dataAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataAccount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataAccount.Location = new System.Drawing.Point(0, 0);
-            this.dataAccount.Name = "dataAccount";
-            this.dataAccount.RowHeadersWidth = 51;
-            this.dataAccount.RowTemplate.Height = 24;
-            this.dataAccount.Size = new System.Drawing.Size(1237, 419);
-            this.dataAccount.TabIndex = 0;
+            this.dgvUserData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUserData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvUserData.Location = new System.Drawing.Point(0, 0);
+            this.dgvUserData.Name = "dgvUserData";
+            this.dgvUserData.RowHeadersWidth = 51;
+            this.dgvUserData.RowTemplate.Height = 24;
+            this.dgvUserData.Size = new System.Drawing.Size(1237, 419);
+            this.dgvUserData.TabIndex = 0;
+            this.dgvUserData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUserData_CellClick);
             // 
             // deleteAccountBtn
             // 
@@ -162,6 +138,27 @@
             this.deleteAccountBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.deleteAccountBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.deleteAccountBtn.UseVisualStyleBackColor = false;
+            this.deleteAccountBtn.Click += new System.EventHandler(this.deleteAccountBtn_Click);
+            // 
+            // txtID
+            // 
+            this.txtID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtID.Location = new System.Drawing.Point(1004, 106);
+            this.txtID.Name = "txtID";
+            this.txtID.ReadOnly = true;
+            this.txtID.Size = new System.Drawing.Size(56, 22);
+            this.txtID.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(972, 106);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(26, 20);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "ID";
             // 
             // Administrator_ManageAccount
             // 
@@ -169,11 +166,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1265, 574);
             this.ControlBox = false;
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtID);
             this.Controls.Add(this.deleteAccountBtn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.cbSearch);
             this.Controls.Add(this.panelSearch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Administrator_ManageAccount";
@@ -181,8 +178,9 @@
             this.panelSearch.ResumeLayout(false);
             this.panelSearch.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataAccount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUserData)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -191,11 +189,11 @@
         private System.Windows.Forms.Panel panelSearch;
         private FontAwesome.Sharp.IconButton btnSearch01;
         private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.ComboBox cbSearch;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataAccount;
+        private System.Windows.Forms.DataGridView dgvUserData;
         private FontAwesome.Sharp.IconButton deleteAccountBtn;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.Label label1;
     }
 }

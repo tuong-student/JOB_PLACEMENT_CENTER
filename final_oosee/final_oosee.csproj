@@ -115,6 +115,14 @@
     <Compile Include="EmployerInterface\MainForm_Employer.Designer.cs">
       <DependentUpon>MainForm_Employer.cs</DependentUpon>
     </Compile>
+    <Compile Include="FactoryMethod\AdminClass.cs" />
+    <Compile Include="FactoryMethod\AbstractUserClass.cs" />
+    <Compile Include="FactoryMethod\EmployerClass.cs" />
+    <Compile Include="FactoryMethod\StudentClass.cs" />
+    <Compile Include="FactoryMethod\UserInterface.cs" />
+    <Compile Include="FactoryMethod\UserAdmin.cs" />
+    <Compile Include="FactoryMethod\UserEmployer.cs" />
+    <Compile Include="FactoryMethod\UserStudent.cs" />
     <Compile Include="Global\util.cs" />
     <Compile Include="Notification\Register_Notifycation.cs">
       <SubType>Form</SubType>
@@ -139,6 +147,9 @@
     </Compile>
     <Compile Include="Global\Account_SignUp.Designer.cs">
       <DependentUpon>Account_SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PHTextBox.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="StudentInterfaces\Student_CV_Form.cs">
       <SubType>Form</SubType>

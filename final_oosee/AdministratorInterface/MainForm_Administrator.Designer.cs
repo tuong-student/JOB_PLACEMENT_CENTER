@@ -49,7 +49,7 @@
             this.panelSideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideBar.Location = new System.Drawing.Point(0, 0);
             this.panelSideBar.Name = "panelSideBar";
-            this.panelSideBar.Size = new System.Drawing.Size(230, 753);
+            this.panelSideBar.Size = new System.Drawing.Size(230, 648);
             this.panelSideBar.TabIndex = 2;
             // 
             // statisticBtn
@@ -110,7 +110,7 @@
             this.logOutButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.logOutButton.IconSize = 30;
             this.logOutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.logOutButton.Location = new System.Drawing.Point(0, 693);
+            this.logOutButton.Location = new System.Drawing.Point(0, 588);
             this.logOutButton.Name = "logOutButton";
             this.logOutButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.logOutButton.Size = new System.Drawing.Size(230, 60);
@@ -149,13 +149,13 @@
             this.panelContent.BackColor = System.Drawing.Color.White;
             this.panelContent.Location = new System.Drawing.Point(236, 12);
             this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(1134, 731);
+            this.panelContent.Size = new System.Drawing.Size(903, 626);
             this.panelContent.TabIndex = 3;
             // 
             // MainForm_Administrator
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1382, 753);
+            this.ClientSize = new System.Drawing.Size(1151, 648);
             this.Controls.Add(this.panelContent);
             this.Controls.Add(this.panelSideBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

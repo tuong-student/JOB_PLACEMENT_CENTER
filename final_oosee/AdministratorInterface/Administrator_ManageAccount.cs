@@ -7,14 +7,43 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using final_oosee.Bridge;
+using final_oosee.Business;
+using final_oosee.Global;
 
 namespace final_oosee.AdministratorInterface
 {
     public partial class Administrator_ManageAccount : Form
     {
+        AbstractManager manager;
+        BLUser blUser;
+
         public Administrator_ManageAccount()
         {
             InitializeComponent();
+            blUser = new BLUser();
+            manager = new AbstractManager(blUser);
+
+            //Show user table to UI
+            dgvUserData.DataSource = manager.GetTable();
+        }
+
+        private void dgvUserData_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Index of the current row
+            int r = dgvUserData.CurrentCell.RowIndex;
+            txtID.Text = dgvUserData.Rows[r].Cells[0].Value.ToString();
+        }
+
+        private void deleteAccountBtn_Click(object sender, EventArgs e)
+        {
+            util.userID = Convert.ToInt32(txtID.Text);
+            manager.Delete();
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            manager.Search(dgvUserData, txtSearch.Text);
         }
     }
 }

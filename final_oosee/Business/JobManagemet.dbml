@@ -46,6 +46,7 @@
       <Column Name="studentID" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="jobID" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="jobName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="status" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

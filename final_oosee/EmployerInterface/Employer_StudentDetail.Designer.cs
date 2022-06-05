@@ -68,12 +68,13 @@
             this.btnRemind.IconSize = 30;
             this.btnRemind.Location = new System.Drawing.Point(569, 94);
             this.btnRemind.Name = "btnRemind";
-            this.btnRemind.Size = new System.Drawing.Size(134, 45);
+            this.btnRemind.Size = new System.Drawing.Size(188, 45);
             this.btnRemind.TabIndex = 7;
-            this.btnRemind.Text = "Remind";
+            this.btnRemind.Text = "Close";
             this.btnRemind.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRemind.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnRemind.UseVisualStyleBackColor = false;
+            this.btnRemind.Click += new System.EventHandler(this.btnRemind_Click);
             // 
             // btnDecline
             // 
@@ -89,12 +90,13 @@
             this.btnDecline.IconSize = 30;
             this.btnDecline.Location = new System.Drawing.Point(569, 163);
             this.btnDecline.Name = "btnDecline";
-            this.btnDecline.Size = new System.Drawing.Size(134, 45);
+            this.btnDecline.Size = new System.Drawing.Size(188, 45);
             this.btnDecline.TabIndex = 7;
             this.btnDecline.Text = "Decline";
             this.btnDecline.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDecline.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnDecline.UseVisualStyleBackColor = false;
+            this.btnDecline.Click += new System.EventHandler(this.btnDecline_Click);
             // 
             // btnApprove
             // 
@@ -110,24 +112,27 @@
             this.btnApprove.IconSize = 30;
             this.btnApprove.Location = new System.Drawing.Point(569, 21);
             this.btnApprove.Name = "btnApprove";
-            this.btnApprove.Size = new System.Drawing.Size(134, 45);
+            this.btnApprove.Size = new System.Drawing.Size(188, 45);
             this.btnApprove.TabIndex = 8;
             this.btnApprove.Text = "Approve";
+            this.btnApprove.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnApprove.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnApprove.UseVisualStyleBackColor = false;
+            this.btnApprove.Click += new System.EventHandler(this.btnApprove_Click);
             // 
             // Employer_StudentDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 593);
+            this.ClientSize = new System.Drawing.Size(839, 593);
             this.Controls.Add(this.btnRemind);
             this.Controls.Add(this.btnDecline);
             this.Controls.Add(this.btnApprove);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Employer_StudentDetail";
             this.Text = "Employer_StudentDetail";
+            this.Load += new System.EventHandler(this.Employer_StudentDetail_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
