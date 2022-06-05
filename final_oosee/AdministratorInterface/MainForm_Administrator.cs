@@ -12,11 +12,17 @@ namespace final_oosee.AdministratorInterface
 {
     public partial class MainForm_Administrator : Form
     {
-        Administrator_ManageAccount administrator_account = new Administrator_ManageAccount() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-        Administrator_Statistic administrator_statistic = new Administrator_Statistic() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+        Administrator_ManageAccount administrator_account;
+        Administrator_Statistic administrator_statistic;
+
+
         public MainForm_Administrator()
         {
             InitializeComponent();
+
+
+            administrator_account = new Administrator_ManageAccount() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            administrator_statistic = new Administrator_Statistic() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.BackColor = Color.FromArgb(173, 232, 244);
         }
 

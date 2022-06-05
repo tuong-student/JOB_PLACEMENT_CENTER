@@ -35,6 +35,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvCandidateList = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnRefresh = new FontAwesome.Sharp.IconButton();
             this.panelSearch.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCandidateList)).BeginInit();
@@ -76,6 +77,7 @@
             this.txtSearch.Size = new System.Drawing.Size(257, 35);
             this.txtSearch.TabIndex = 1;
             this.txtSearch.Text = "job name";
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // button1
             // 
@@ -126,12 +128,31 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Candidate List";
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.SystemColors.Control;
+            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(35)))), ((int)(((byte)(75)))));
+            this.btnRefresh.IconChar = FontAwesome.Sharp.IconChar.Redo;
+            this.btnRefresh.IconColor = System.Drawing.Color.Black;
+            this.btnRefresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnRefresh.IconSize = 35;
+            this.btnRefresh.Location = new System.Drawing.Point(538, 59);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(46, 45);
+            this.btnRefresh.TabIndex = 7;
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // Employer_Candidate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1215, 670);
             this.ControlBox = false;
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
@@ -139,7 +160,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Employer_Candidate";
             this.Text = "EmployerHome";
-            this.Load += new System.EventHandler(this.EmployerHome_Load);
+            this.Load += new System.EventHandler(this.EmployerCandidate_Load);
             this.panelSearch.ResumeLayout(false);
             this.panelSearch.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -158,5 +179,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgvCandidateList;
         private System.Windows.Forms.Label label1;
+        private FontAwesome.Sharp.IconButton btnRefresh;
     }
 }

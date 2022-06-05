@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Linq;
+using System.Windows.Forms;
 using final_oosee.Global;
 
 namespace final_oosee.Business
@@ -17,6 +18,8 @@ namespace final_oosee.Business
         bool Delete();
 
         bool Update();
+
+        void Search(DataGridView dgv, string searchKeyWord);
 
     }
 }

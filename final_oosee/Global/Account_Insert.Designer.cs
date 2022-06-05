@@ -54,7 +54,7 @@
             this.panelPresentation.Location = new System.Drawing.Point(0, 0);
             this.panelPresentation.Name = "panelPresentation";
             this.panelPresentation.Padding = new System.Windows.Forms.Padding(20);
-            this.panelPresentation.Size = new System.Drawing.Size(300, 530);
+            this.panelPresentation.Size = new System.Drawing.Size(300, 596);
             this.panelPresentation.TabIndex = 0;
             // 
             // label5
@@ -120,19 +120,20 @@
             this.panelAccount_Insert.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAccount_Insert.Location = new System.Drawing.Point(300, 0);
             this.panelAccount_Insert.Name = "panelAccount_Insert";
-            this.panelAccount_Insert.Size = new System.Drawing.Size(550, 530);
+            this.panelAccount_Insert.Size = new System.Drawing.Size(696, 596);
             this.panelAccount_Insert.TabIndex = 1;
             this.panelAccount_Insert.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAccount_Insert_Paint);
             // 
             // btnSignUpForm
             // 
+            this.btnSignUpForm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSignUpForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(121)))), ((int)(((byte)(49)))));
             this.btnSignUpForm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(121)))), ((int)(((byte)(49)))));
             this.btnSignUpForm.FlatAppearance.BorderSize = 0;
             this.btnSignUpForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignUpForm.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignUpForm.ForeColor = System.Drawing.Color.White;
-            this.btnSignUpForm.Location = new System.Drawing.Point(443, 477);
+            this.btnSignUpForm.Location = new System.Drawing.Point(589, 543);
             this.btnSignUpForm.Name = "btnSignUpForm";
             this.btnSignUpForm.Size = new System.Drawing.Size(95, 41);
             this.btnSignUpForm.TabIndex = 7;
@@ -142,13 +143,14 @@
             // 
             // btnLogin
             // 
+            this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLogin.BackColor = System.Drawing.Color.White;
             this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(121)))), ((int)(((byte)(49)))));
             this.btnLogin.FlatAppearance.BorderSize = 2;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(121)))), ((int)(((byte)(49)))));
-            this.btnLogin.Location = new System.Drawing.Point(317, 477);
+            this.btnLogin.Location = new System.Drawing.Point(463, 543);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(95, 41);
             this.btnLogin.TabIndex = 8;
@@ -164,7 +166,7 @@
             this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitBtn.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(100)))), ((int)(((byte)(20)))));
-            this.exitBtn.Location = new System.Drawing.Point(483, 0);
+            this.exitBtn.Location = new System.Drawing.Point(629, 0);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(67, 47);
             this.exitBtn.TabIndex = 5;
@@ -176,7 +178,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 530);
+            this.ClientSize = new System.Drawing.Size(996, 596);
             this.ControlBox = false;
             this.Controls.Add(this.panelAccount_Insert);
             this.Controls.Add(this.panelPresentation);

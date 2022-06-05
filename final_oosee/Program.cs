@@ -22,7 +22,7 @@ namespace final_oosee
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm_Employer());
+            Application.Run(new Account_Insert());
         }
     }
 }

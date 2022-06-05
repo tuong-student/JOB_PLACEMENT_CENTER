@@ -860,6 +860,8 @@ namespace final_oosee.Business
 		
 		private string _jobName;
 		
+		private string _status;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -872,6 +874,8 @@ namespace final_oosee.Business
     partial void OnjobIDChanged();
     partial void OnjobNameChanging(string value);
     partial void OnjobNameChanged();
+    partial void OnstatusChanging(string value);
+    partial void OnstatusChanged();
     #endregion
 		
 		public studentApplied()
@@ -955,6 +959,26 @@ namespace final_oosee.Business
 					this._jobName = value;
 					this.SendPropertyChanged("jobName");
 					this.OnjobNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_status", DbType="NVarChar(10)")]
+		public string status
+		{
+			get
+			{
+				return this._status;
+			}
+			set
+			{
+				if ((this._status != value))
+				{
+					this.OnstatusChanging(value);
+					this.SendPropertyChanging();
+					this._status = value;
+					this.SendPropertyChanged("status");
+					this.OnstatusChanged();
 				}
 			}
 		}

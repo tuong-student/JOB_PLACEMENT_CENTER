@@ -19,25 +19,13 @@ namespace final_oosee.EmployerInterface
         Employer_EventManager employerEventManager;
         Employer_InformationRegister employerInformationRegister;
 
-        AbstractManager manager;
-        BLStudent blStudet;
-
-        List<JOB> jobs;
-
         public MainForm_Employer()
         {
             InitializeComponent();
-            blStudet = new BLStudent();
-            manager = new AbstractManager(blStudet);
-            string userName = "comB";
-            string role = "employer";
-            util.GetUserWhenLogin(userName, role);
-
-            jobs = util.GetJobList(util.user.ID);
 
             //Give jobList to the orther form in order to get inf from the jobList
-            employerHome = new Employer_Candidate(jobs) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            employerEventManager = new Employer_EventManager(jobs) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true }; 
+            employerHome = new Employer_Candidate() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            employerEventManager = new Employer_EventManager() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true }; 
             employerInformationRegister = new Employer_InformationRegister() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
 
             this.BackColor = Color.FromArgb(251, 35, 75);

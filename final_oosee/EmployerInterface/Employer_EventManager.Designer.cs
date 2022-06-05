@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.pnEventCreator = new System.Windows.Forms.Panel();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtDescription = new System.Windows.Forms.TextBox();
+            this.txtWagePerHour = new System.Windows.Forms.TextBox();
+            this.txtJobName = new System.Windows.Forms.TextBox();
+            this.btnCancel = new FontAwesome.Sharp.IconButton();
+            this.btnAdd = new FontAwesome.Sharp.IconButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -46,14 +46,13 @@
             this.panelSearch = new System.Windows.Forms.Panel();
             this.btnSearch01 = new FontAwesome.Sharp.IconButton();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cbSearch = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dgvJobEvent = new System.Windows.Forms.DataGridView();
             this.btnConfirm = new FontAwesome.Sharp.IconButton();
-            this.btnCancel = new FontAwesome.Sharp.IconButton();
+            this.btnRemove = new FontAwesome.Sharp.IconButton();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.panel1.SuspendLayout();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pnEventCreator.SuspendLayout();
             this.panelSearch.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJobEvent)).BeginInit();
@@ -71,102 +70,103 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Event Manager";
             // 
-            // panel1
+            // pnEventCreator
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(237)))), ((int)(((byte)(239)))));
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.iconButton2);
-            this.panel1.Controls.Add(this.iconButton1);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(736, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(381, 614);
-            this.panel1.TabIndex = 1;
+            this.pnEventCreator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(237)))), ((int)(((byte)(239)))));
+            this.pnEventCreator.Controls.Add(this.txtAddress);
+            this.pnEventCreator.Controls.Add(this.txtDescription);
+            this.pnEventCreator.Controls.Add(this.txtWagePerHour);
+            this.pnEventCreator.Controls.Add(this.txtJobName);
+            this.pnEventCreator.Controls.Add(this.btnCancel);
+            this.pnEventCreator.Controls.Add(this.btnAdd);
+            this.pnEventCreator.Controls.Add(this.label5);
+            this.pnEventCreator.Controls.Add(this.label8);
+            this.pnEventCreator.Controls.Add(this.label7);
+            this.pnEventCreator.Controls.Add(this.label6);
+            this.pnEventCreator.Controls.Add(this.label4);
+            this.pnEventCreator.Controls.Add(this.label2);
+            this.pnEventCreator.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnEventCreator.Location = new System.Drawing.Point(736, 0);
+            this.pnEventCreator.Name = "pnEventCreator";
+            this.pnEventCreator.Size = new System.Drawing.Size(381, 614);
+            this.pnEventCreator.TabIndex = 1;
             // 
-            // dateTimePicker1
+            // txtAddress
             // 
-            this.dateTimePicker1.CustomFormat = "dd;;mm;;yy";
-            this.dateTimePicker1.Location = new System.Drawing.Point(153, 237);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 8;
+            this.txtAddress.Location = new System.Drawing.Point(153, 236);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(184, 22);
+            this.txtAddress.TabIndex = 8;
             // 
-            // textBox4
+            // txtDescription
             // 
-            this.textBox4.AllowDrop = true;
-            this.textBox4.Location = new System.Drawing.Point(185, 290);
-            this.textBox4.MinimumSize = new System.Drawing.Size(0, 100);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(168, 100);
-            this.textBox4.TabIndex = 7;
+            this.txtDescription.AllowDrop = true;
+            this.txtDescription.Location = new System.Drawing.Point(185, 290);
+            this.txtDescription.MinimumSize = new System.Drawing.Size(0, 100);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(168, 100);
+            this.txtDescription.TabIndex = 7;
             // 
-            // textBox2
+            // txtWagePerHour
             // 
-            this.textBox2.Location = new System.Drawing.Point(153, 189);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 7;
+            this.txtWagePerHour.Location = new System.Drawing.Point(153, 189);
+            this.txtWagePerHour.Name = "txtWagePerHour";
+            this.txtWagePerHour.Size = new System.Drawing.Size(100, 22);
+            this.txtWagePerHour.TabIndex = 7;
             // 
-            // textBox1
+            // txtJobName
             // 
-            this.textBox1.Location = new System.Drawing.Point(153, 151);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 22);
-            this.textBox1.TabIndex = 7;
+            this.txtJobName.Location = new System.Drawing.Point(153, 151);
+            this.txtJobName.Name = "txtJobName";
+            this.txtJobName.Size = new System.Drawing.Size(184, 22);
+            this.txtJobName.TabIndex = 7;
             // 
-            // iconButton2
+            // btnCancel
             // 
-            this.iconButton2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(4)))), ((int)(((byte)(41)))));
-            this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(4)))), ((int)(((byte)(36)))));
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.White;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.XingSquare;
-            this.iconButton2.IconColor = System.Drawing.Color.White;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 30;
-            this.iconButton2.Location = new System.Drawing.Point(203, 548);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(134, 45);
-            this.iconButton2.TabIndex = 6;
-            this.iconButton2.Text = "Cancel";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.iconButton2.UseVisualStyleBackColor = false;
+            this.btnCancel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(4)))), ((int)(((byte)(41)))));
+            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(4)))), ((int)(((byte)(36)))));
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.IconChar = FontAwesome.Sharp.IconChar.XingSquare;
+            this.btnCancel.IconColor = System.Drawing.Color.White;
+            this.btnCancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCancel.IconSize = 30;
+            this.btnCancel.Location = new System.Drawing.Point(203, 548);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(134, 45);
+            this.btnCancel.TabIndex = 6;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // iconButton1
+            // btnAdd
             // 
-            this.iconButton1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(176)))), ((int)(((byte)(0)))));
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(4)))), ((int)(((byte)(36)))));
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 30;
-            this.iconButton1.Location = new System.Drawing.Point(64, 548);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(112, 45);
-            this.iconButton1.TabIndex = 6;
-            this.iconButton1.Text = "Add";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.iconButton1.UseVisualStyleBackColor = false;
+            this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(176)))), ((int)(((byte)(0)))));
+            this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(4)))), ((int)(((byte)(36)))));
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
+            this.btnAdd.IconColor = System.Drawing.Color.White;
+            this.btnAdd.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAdd.IconSize = 30;
+            this.btnAdd.Location = new System.Drawing.Point(64, 548);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(112, 45);
+            this.btnAdd.TabIndex = 6;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label5
             // 
@@ -203,22 +203,22 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(3)))), ((int)(((byte)(29)))));
             this.label7.Location = new System.Drawing.Point(18, 236);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(120, 23);
+            this.label7.Size = new System.Drawing.Size(88, 23);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Expire Date";
+            this.label7.Text = "Address";
             // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(237)))), ((int)(((byte)(239)))));
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(3)))), ((int)(((byte)(29)))));
             this.label6.Location = new System.Drawing.Point(18, 189);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 23);
+            this.label6.Size = new System.Drawing.Size(94, 38);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Salary";
+            this.label6.Text = "Wage per \r\nhour";
             // 
             // label4
             // 
@@ -258,19 +258,17 @@
             // 
             // btnSearch01
             // 
-            this.btnSearch01.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(4)))), ((int)(((byte)(36)))));
-            this.btnSearch01.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnSearch01.FlatAppearance.BorderSize = 0;
             this.btnSearch01.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch01.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.btnSearch01.IconColor = System.Drawing.Color.White;
+            this.btnSearch01.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(4)))), ((int)(((byte)(36)))));
             this.btnSearch01.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSearch01.IconSize = 30;
-            this.btnSearch01.Location = new System.Drawing.Point(234, 0);
+            this.btnSearch01.Location = new System.Drawing.Point(5, 2);
             this.btnSearch01.Name = "btnSearch01";
-            this.btnSearch01.Size = new System.Drawing.Size(63, 42);
-            this.btnSearch01.TabIndex = 2;
-            this.btnSearch01.UseVisualStyleBackColor = false;
+            this.btnSearch01.Size = new System.Drawing.Size(45, 41);
+            this.btnSearch01.TabIndex = 4;
+            this.btnSearch01.UseVisualStyleBackColor = true;
             // 
             // txtSearch
             // 
@@ -278,37 +276,11 @@
             this.txtSearch.BackColor = System.Drawing.SystemColors.Control;
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(3, 4);
+            this.txtSearch.Location = new System.Drawing.Point(69, 5);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(225, 34);
             this.txtSearch.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.Control;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(35)))), ((int)(((byte)(75)))));
-            this.label3.Location = new System.Drawing.Point(474, 100);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 21);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Sort by";
-            // 
-            // cbSearch
-            // 
-            this.cbSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbSearch.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSearch.FormattingEnabled = true;
-            this.cbSearch.Items.AddRange(new object[] {
-            "Front End",
-            "Back End",
-            "Data Engineer"});
-            this.cbSearch.Location = new System.Drawing.Point(546, 91);
-            this.cbSearch.Name = "cbSearch";
-            this.cbSearch.Size = new System.Drawing.Size(184, 35);
-            this.cbSearch.TabIndex = 4;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // panel2
             // 
@@ -332,6 +304,7 @@
             this.dgvJobEvent.RowTemplate.Height = 24;
             this.dgvJobEvent.Size = new System.Drawing.Size(718, 399);
             this.dgvJobEvent.TabIndex = 1;
+            this.dgvJobEvent.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvJobEvent_CellClick);
             // 
             // btnConfirm
             // 
@@ -353,28 +326,30 @@
             this.btnConfirm.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnConfirm.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnConfirm.UseVisualStyleBackColor = false;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
-            // btnCancel
+            // btnRemove
             // 
-            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(4)))), ((int)(((byte)(36)))));
-            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(4)))), ((int)(((byte)(36)))));
-            this.btnCancel.FlatAppearance.BorderSize = 0;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.IconChar = FontAwesome.Sharp.IconChar.CalendarMinus;
-            this.btnCancel.IconColor = System.Drawing.Color.White;
-            this.btnCancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCancel.IconSize = 30;
-            this.btnCancel.Location = new System.Drawing.Point(596, 140);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(134, 45);
-            this.btnCancel.TabIndex = 6;
-            this.btnCancel.Text = "Remove";
-            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnRemove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(4)))), ((int)(((byte)(36)))));
+            this.btnRemove.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(4)))), ((int)(((byte)(36)))));
+            this.btnRemove.FlatAppearance.BorderSize = 0;
+            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemove.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemove.ForeColor = System.Drawing.Color.White;
+            this.btnRemove.IconChar = FontAwesome.Sharp.IconChar.CalendarMinus;
+            this.btnRemove.IconColor = System.Drawing.Color.White;
+            this.btnRemove.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnRemove.IconSize = 30;
+            this.btnRemove.Location = new System.Drawing.Point(596, 140);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(134, 45);
+            this.btnRemove.TabIndex = 6;
+            this.btnRemove.Text = "Remove";
+            this.btnRemove.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRemove.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnRemove.UseVisualStyleBackColor = false;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // contextMenuStrip1
             // 
@@ -382,24 +357,37 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(4)))), ((int)(((byte)(36)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(316, 76);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(115, 44);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Search";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Employer_EventManager
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1117, 614);
             this.ControlBox = false;
-            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.cbSearch);
             this.Controls.Add(this.panelSearch);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pnEventCreator);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Employer_EventManager";
             this.Text = "Employer_EventManager";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnEventCreator.ResumeLayout(false);
+            this.pnEventCreator.PerformLayout();
             this.panelSearch.ResumeLayout(false);
             this.panelSearch.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -412,13 +400,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnEventCreator;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelSearch;
-        private FontAwesome.Sharp.IconButton btnSearch01;
         private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cbSearch;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dgvJobEvent;
         private System.Windows.Forms.Label label5;
@@ -427,13 +412,15 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private FontAwesome.Sharp.IconButton btnConfirm;
+        private FontAwesome.Sharp.IconButton btnRemove;
         private FontAwesome.Sharp.IconButton btnCancel;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private FontAwesome.Sharp.IconButton btnAdd;
+        private System.Windows.Forms.TextBox txtDescription;
+        private System.Windows.Forms.TextBox txtWagePerHour;
+        private System.Windows.Forms.TextBox txtJobName;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Button button1;
+        private FontAwesome.Sharp.IconButton btnSearch01;
+        private System.Windows.Forms.TextBox txtAddress;
     }
 }
