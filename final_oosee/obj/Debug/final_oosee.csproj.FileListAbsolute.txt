@@ -138,3 +138,5 @@ D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final
 D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.csproj.CopyComplete
 D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.exe
 D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.pdb
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.EmployerInterface.StudentCV_Information.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.Notification.Validate_Notification.resources

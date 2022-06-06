@@ -158,6 +158,7 @@
             this.Controls.Add(this.panelSideBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm_Student";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm_Student";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panelSideBar.ResumeLayout(false);
