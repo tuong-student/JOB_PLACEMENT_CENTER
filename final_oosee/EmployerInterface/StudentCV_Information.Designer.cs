@@ -195,7 +195,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(4)))), ((int)(((byte)(94)))));
-            this.label14.Location = new System.Drawing.Point(113, 143);
+            this.label14.Location = new System.Drawing.Point(12, 143);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(112, 28);
             this.label14.TabIndex = 3;
@@ -214,7 +214,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 237);
+            this.label1.Location = new System.Drawing.Point(8, 234);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(213, 475);
             this.label1.TabIndex = 4;
@@ -225,6 +225,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(781, 785);
+            this.ControlBox = false;
             this.Controls.Add(this.dateofBirthPicker);
             this.Controls.Add(this.additionalPicker);
             this.Controls.Add(this.healthPicker);
@@ -241,6 +242,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StudentCV_Information";
             this.Text = "StudentCV_Information";
             this.panel1.ResumeLayout(false);
