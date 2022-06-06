@@ -182,7 +182,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.panelAccount_Insert);
             this.Controls.Add(this.panelPresentation);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
             this.Name = "Account_Insert";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
