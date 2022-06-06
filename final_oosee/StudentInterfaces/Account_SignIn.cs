@@ -22,15 +22,9 @@ namespace final_oosee
 
         }
 
-        public String txtUserName
-        {
-            get { return txtUsername_signIn.Text.ToString(); }
-        }
+        public String txtUserName{get { return txtUsername_signIn.Text.ToString(); }}
 
-        public String txtPassword
-        {
-            get { return txtPassword_signIn.Text.ToString(); }
-        }
+        public String txtPassword{get { return txtPassword_signIn.Text.ToString(); }}
 
         public String typeOfAccount{ get; set; }
 

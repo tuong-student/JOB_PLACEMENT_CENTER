@@ -20,24 +20,27 @@ namespace final_oosee
             insSignUp = this;
         }
 
-        private void Account_SignUp_Load(object sender, EventArgs e)
-        {
+        private void Account_SignUp_Load(object sender, EventArgs e){}
 
-        }
+        private void txtUsername_signIn_TextChanged(object sender, EventArgs e) { }
 
-        private void txtUsername_signIn_TextChanged(object sender, EventArgs e)
-        {
+        private void panelAccount_Insert_Paint(object sender, PaintEventArgs e) { }
 
-        }
-
-        private void panelAccount_Insert_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        public String txtUserName{get { return txtUsername_signUp.Text.ToString(); }}
+        public String txtPassword{get { return txtPassword_signUp.Text.ToString(); }}
+        public String txtRePassword { get { return txtPassword_reEnter.Text.ToString(); } }
+        public String typeOfAccount { get; set; }
 
         private void radioBtnStudent_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (radioBtnStudent.Checked)
+            {
+                typeOfAccount = "student";
+            }
+            if (radioBtnEmployer.Checked)
+            {
+                typeOfAccount = "employer";
+            }
         }
     }
 }

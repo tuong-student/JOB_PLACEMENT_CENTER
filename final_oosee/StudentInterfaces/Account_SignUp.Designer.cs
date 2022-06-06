@@ -30,7 +30,6 @@
         {
             this.panelAccount_Insert = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.radioBtnAdmin = new System.Windows.Forms.RadioButton();
             this.radioBtnEmployer = new System.Windows.Forms.RadioButton();
             this.radioBtnStudent = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -74,7 +73,6 @@
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.radioBtnAdmin);
             this.panel2.Controls.Add(this.radioBtnEmployer);
             this.panel2.Controls.Add(this.radioBtnStudent);
             this.panel2.Controls.Add(this.label1);
@@ -82,19 +80,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(800, 76);
             this.panel2.TabIndex = 3;
-            // 
-            // radioBtnAdmin
-            // 
-            this.radioBtnAdmin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.radioBtnAdmin.AutoSize = true;
-            this.radioBtnAdmin.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioBtnAdmin.Location = new System.Drawing.Point(353, 39);
-            this.radioBtnAdmin.Name = "radioBtnAdmin";
-            this.radioBtnAdmin.Size = new System.Drawing.Size(141, 25);
-            this.radioBtnAdmin.TabIndex = 1;
-            this.radioBtnAdmin.TabStop = true;
-            this.radioBtnAdmin.Text = "Administrator";
-            this.radioBtnAdmin.UseVisualStyleBackColor = true;
             // 
             // radioBtnEmployer
             // 
@@ -295,7 +280,6 @@
 
         private System.Windows.Forms.Panel panelAccount_Insert;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RadioButton radioBtnAdmin;
         private System.Windows.Forms.RadioButton radioBtnEmployer;
         private System.Windows.Forms.RadioButton radioBtnStudent;
         private System.Windows.Forms.Label label1;
