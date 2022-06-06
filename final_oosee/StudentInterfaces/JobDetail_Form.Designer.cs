@@ -54,7 +54,7 @@
             this.panel1.Controls.Add(this.lbJobName);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(552, 262);
+            this.panel1.Size = new System.Drawing.Size(531, 262);
             this.panel1.TabIndex = 0;
             // 
             // btnApply
@@ -149,7 +149,7 @@
             this.panel2.Controls.Add(this.lbJobDescription);
             this.panel2.Location = new System.Drawing.Point(12, 298);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(552, 564);
+            this.panel2.Size = new System.Drawing.Size(531, 564);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -176,6 +176,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MinimumSize = new System.Drawing.Size(764, 628);
             this.Name = "JobDetail_Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "JobDetail_Form";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
