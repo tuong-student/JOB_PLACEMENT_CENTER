@@ -115,6 +115,10 @@
     <Compile Include="EmployerInterface\MainForm_Employer.Designer.cs">
       <DependentUpon>MainForm_Employer.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmployerInterface\StudentCV_Information.cs" />
+    <Compile Include="EmployerInterface\StudentCV_Information.Designer.cs">
+      <DependentUpon>StudentCV_Information.cs</DependentUpon>
+    </Compile>
     <Compile Include="FactoryMethod\AdminClass.cs" />
     <Compile Include="FactoryMethod\AbstractUserClass.cs" />
     <Compile Include="FactoryMethod\EmployerClass.cs" />
@@ -147,6 +151,10 @@
     </Compile>
     <Compile Include="Global\Account_SignUp.Designer.cs">
       <DependentUpon>Account_SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notification\Validate_Notification.cs" />
+    <Compile Include="Notification\Validate_Notification.Designer.cs">
+      <DependentUpon>Validate_Notification.cs</DependentUpon>
     </Compile>
     <Compile Include="PHTextBox.cs">
       <SubType>Component</SubType>
@@ -207,6 +215,9 @@
     <EmbeddedResource Include="EmployerInterface\MainForm_Employer.resx">
       <DependentUpon>MainForm_Employer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EmployerInterface\StudentCV_Information.resx">
+      <DependentUpon>StudentCV_Information.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Notification\Register_Notifycation.resx">
       <DependentUpon>Register_Notifycation.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +229,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Global\Account_SignUp.resx">
       <DependentUpon>Account_SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notification\Validate_Notification.resx">
+      <DependentUpon>Validate_Notification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentInterfaces\Student_CV_Form.resx">
       <DependentUpon>Student_CV_Form.cs</DependentUpon>
