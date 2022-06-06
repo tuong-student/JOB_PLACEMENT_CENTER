@@ -116,6 +116,9 @@
       <DependentUpon>MainForm_Employer.cs</DependentUpon>
     </Compile>
     <Compile Include="EmployerInterface\StudentCV_Information.cs" />
+    <Compile Include="EmployerInterface\StudentCV_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EmployerInterface\StudentCV_Information.Designer.cs">
       <DependentUpon>StudentCV_Information.cs</DependentUpon>
     </Compile>
@@ -153,6 +156,9 @@
       <DependentUpon>Account_SignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Notification\Validate_Notification.cs" />
+    <Compile Include="Notification\Validate_Notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Notification\Validate_Notification.Designer.cs">
       <DependentUpon>Validate_Notification.cs</DependentUpon>
     </Compile>

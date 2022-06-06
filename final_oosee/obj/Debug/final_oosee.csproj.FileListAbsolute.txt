@@ -110,3 +110,33 @@ E:\DOWNLOAD\DOWNLOAD\STUDY\Windows_Programming\JOB_PLACEMENT_CENTER\final_oosee\
 E:\DOWNLOAD\DOWNLOAD\STUDY\Windows_Programming\JOB_PLACEMENT_CENTER\final_oosee\bin\Debug\FontAwesome.Sharp.dll
 E:\DOWNLOAD\DOWNLOAD\STUDY\Windows_Programming\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.csproj.CopyComplete
 E:\DOWNLOAD\DOWNLOAD\STUDY\Windows_Programming\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.EmployerInterface.Employer_Candidate.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\bin\Debug\final_oosee.exe.config
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\bin\Debug\final_oosee.exe
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\bin\Debug\final_oosee.pdb
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\bin\Debug\FontAwesome.Sharp.dll
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.csproj.AssemblyReference.cache
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.csproj.SuggestedBindingRedirects.cache
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.AdministratorInterface.Administrator_ManageAccount.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.AdministratorInterface.Administrator_Statistic.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.AdministratorInterface.MainForm_Administrator.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.EmployerInterface.Employer_Candidate.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.EmployerInterface.Employer_EventManager.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.EmployerInterface.Employer_InformationRegister.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.EmployerInterface.Employer_StudentDetail.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.EmployerInterface.MainForm_Employer.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.Notification.Register_Notifycation.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.Account_Insert.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.Account_SignIn.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.Account_SignUp.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.Student_CV_Form.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.MainForm_Student.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.Properties.Resources.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.JobDetail_Form.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.StudentHome.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.csproj.GenerateResource.cache
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.csproj.CoreCompileInputs.cache
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.csproj.CopyComplete
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.exe
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.pdb
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.EmployerInterface.StudentCV_Information.resources
+D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.Notification.Validate_Notification.resources

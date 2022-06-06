@@ -11,6 +11,7 @@ using final_oosee.Global;
 using final_oosee.Bridge;
 using final_oosee.Business;
 
+
 namespace final_oosee.EmployerInterface
 {
     public partial class Employer_StudentDetail : Form
@@ -28,6 +29,7 @@ namespace final_oosee.EmployerInterface
             manager = new AbstractManager(blStudentApplied);
             //When load, use information in util class to show in CV zone
         }
+        
 
         private void btnRemind_Click(object sender, EventArgs e)
         {
@@ -54,7 +56,7 @@ namespace final_oosee.EmployerInterface
 
         private void Employer_StudentDetail_Load(object sender, EventArgs e)
         {
-
+           
         }
     }
 }
