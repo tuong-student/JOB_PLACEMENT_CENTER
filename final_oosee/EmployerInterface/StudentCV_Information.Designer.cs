@@ -50,24 +50,27 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.panel1.Controls.Add(this.fullNamePicker);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(765, 100);
+            this.panel1.Size = new System.Drawing.Size(783, 100);
             this.panel1.TabIndex = 0;
             // 
             // fullNamePicker
             // 
-            this.fullNamePicker.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.fullNamePicker.AutoSize = true;
+            this.fullNamePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.fullNamePicker.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fullNamePicker.ForeColor = System.Drawing.Color.White;
-            this.fullNamePicker.Location = new System.Drawing.Point(197, 31);
+            this.fullNamePicker.Location = new System.Drawing.Point(14, 29);
             this.fullNamePicker.Name = "fullNamePicker";
-            this.fullNamePicker.Size = new System.Drawing.Size(372, 40);
+            this.fullNamePicker.Size = new System.Drawing.Size(761, 40);
             this.fullNamePicker.TabIndex = 0;
             this.fullNamePicker.Text = "[insert full name here]";
+            this.fullNamePicker.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -86,7 +89,7 @@
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Location = new System.Drawing.Point(231, 112);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(4, 676);
+            this.label3.Size = new System.Drawing.Size(4, 665);
             this.label3.TabIndex = 2;
             // 
             // label4
@@ -146,16 +149,17 @@
             // 
             // IDPicker
             // 
-            this.IDPicker.AutoSize = true;
             this.IDPicker.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IDPicker.Location = new System.Drawing.Point(298, 185);
             this.IDPicker.Name = "IDPicker";
-            this.IDPicker.Size = new System.Drawing.Size(129, 30);
+            this.IDPicker.Size = new System.Drawing.Size(479, 30);
             this.IDPicker.TabIndex = 4;
             this.IDPicker.Text = "[insert  ID]";
             // 
             // dateofBirthPicker
             // 
+            this.dateofBirthPicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dateofBirthPicker.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateofBirthPicker.Location = new System.Drawing.Point(303, 274);
             this.dateofBirthPicker.Name = "dateofBirthPicker";
@@ -164,7 +168,8 @@
             // 
             // genderPicker
             // 
-            this.genderPicker.AutoSize = true;
+            this.genderPicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.genderPicker.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.genderPicker.Location = new System.Drawing.Point(298, 375);
             this.genderPicker.Name = "genderPicker";
@@ -174,6 +179,8 @@
             // 
             // healthPicker
             // 
+            this.healthPicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.healthPicker.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.healthPicker.Location = new System.Drawing.Point(303, 478);
             this.healthPicker.Name = "healthPicker";
@@ -183,6 +190,8 @@
             // 
             // additionalPicker
             // 
+            this.additionalPicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.additionalPicker.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.additionalPicker.Location = new System.Drawing.Point(291, 671);
             this.additionalPicker.Name = "additionalPicker";
@@ -216,7 +225,7 @@
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 237);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(213, 475);
+            this.label1.Size = new System.Drawing.Size(213, 446);
             this.label1.TabIndex = 4;
             this.label1.Text = "[insert address]";
             // 
@@ -224,7 +233,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(781, 785);
+            this.ClientSize = new System.Drawing.Size(799, 774);
             this.Controls.Add(this.dateofBirthPicker);
             this.Controls.Add(this.additionalPicker);
             this.Controls.Add(this.healthPicker);
@@ -244,7 +253,6 @@
             this.Name = "StudentCV_Information";
             this.Text = "StudentCV_Information";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
