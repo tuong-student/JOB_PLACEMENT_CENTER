@@ -17,6 +17,8 @@ namespace final_oosee.Business
 
         bool Delete();
 
+        bool DeleteBaseOnUseID();
+
         bool Update();
 
         void Search(DataGridView dgv, string searchKeyWord);

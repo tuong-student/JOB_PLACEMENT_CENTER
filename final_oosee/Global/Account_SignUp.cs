@@ -35,9 +35,21 @@ namespace final_oosee
 
         }
 
+        public String txtUserName { get { return txtUsername_signUp.Text.ToString().Trim(); } }
+        public String txtPassword { get { return txtPassword_signUp.Text.ToString().Trim(); } }
+        public String txtRePassword { get { return txtPassword_reEnter.Text.ToString().Trim(); } }
+        public String role { get; set; }
+
         private void radioBtnStudent_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (radioBtnStudent.Checked)
+            {
+                role = "student";
+            }
+            if (radioBtnEmployer.Checked)
+            {
+                role = "employer";
+            }
         }
     }
 }

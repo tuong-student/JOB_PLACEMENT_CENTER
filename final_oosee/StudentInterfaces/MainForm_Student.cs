@@ -43,5 +43,13 @@ namespace final_oosee
             studentHomeForm.Hide();
             studentCVForm.Show();
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Account_Insert account_Insert_Form = new Account_Insert();
+            account_Insert_Form.ShowDialog();
+            this.Close();
+        }
     }
 }

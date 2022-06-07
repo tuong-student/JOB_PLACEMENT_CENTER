@@ -50,7 +50,7 @@ namespace final_oosee.Global
 
         public static EMPLOYER GetEmployer(int employerID)
         {
-            return (EMPLOYER)jobManagemetDataContext.EMPLOYERs.Where(P => P.ID == employerID);
+            return (EMPLOYER)jobManagemetDataContext.EMPLOYERs.Where(P => P.ID == employerID).Single();
         }
 
         public static EMPLOYER GetEmployerBaseOnUserID(int userID)
@@ -61,7 +61,7 @@ namespace final_oosee.Global
         public static STUDENT GetStudent(int studentID)
         {
             STUDENT stu = new STUDENT();
-            stu = (STUDENT)jobManagemetDataContext.STUDENTs.Where(P => P.ID == studentID);
+            stu = (STUDENT)jobManagemetDataContext.STUDENTs.Where(P => P.ID == studentID).Single();
 
             util.studentID = stu.ID;
             util.stfullName = stu.fullName;
@@ -98,15 +98,16 @@ namespace final_oosee.Global
 
         public static USER GetUserWhenLogin(string userName)
         {
-            util.user = (USER)jobManagemetDataContext.USERs.Where(P => P.username.Contains(userName)).Single();
-            if (util.user == null)
+            try
             {
-                //TODO: show error
+                util.user = (USER)jobManagemetDataContext.USERs.Where(P => P.username.Equals(userName)).Single();
 
+                return util.user;
+            }
+            catch
+            {
                 return null;
             }
-
-            return util.user;
         }
 
         public static List<studentApplied> GetStudentAppliedList(int jobID)
@@ -133,9 +134,29 @@ namespace final_oosee.Global
             return result.ToList();
         }
 
-        public static void ShowError()
+        public static int GetUserNumber()
         {
-            //TODO: Show error window if login fail or register fail
+            return jobManagemetDataContext.USERs.Count();
+        }
+
+        public static int GetStudentNumber()
+        {
+            return jobManagemetDataContext.STUDENTs.Count();
+        }
+
+        public static int GetEmployerNumber()
+        {
+            return jobManagemetDataContext.EMPLOYERs.Count();
+        }
+
+        public static int GetJobNumber()
+        {
+            return jobManagemetDataContext.JOBs.Count();
+        }
+
+        public static int GetStudentAppliedNumber()
+        {
+            return jobManagemetDataContext.studentApplieds.Count();
         }
     }
 }

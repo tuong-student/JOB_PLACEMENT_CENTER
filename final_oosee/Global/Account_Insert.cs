@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using final_oosee.Global;
 using final_oosee.FactoryMethod;
+using final_oosee.Notification;
 
 namespace final_oosee
 {
@@ -64,31 +65,62 @@ namespace final_oosee
             }
 
             //Check if account is correct
+            string username = signInForm.txtUserName;
 
-            string username = "comA";
-            //Sign in success
-            util.userName = username;
-            util.user = util.GetUserWhenLogin(util.userName);
-
-            this.Hide();
-            //Create User (Set util and show form)
-            switch(util.user.role)
+            if(username == "")
             {
-                case "student":
-                    AbstractUserClass student = new StudentClass();
-                    student.SetUtil();
-                    break;
-                case "employer":
-                    AbstractUserClass employer = new EmployerClass();
-                    employer.SetUtil();
-                    break;
-                case "admin":
-                    AbstractUserClass admin = new AdminClass();
-                    admin.SetUtil();
-                    break;
+                Validate_Notification notification = new Validate_Notification();
+                notification.validate_Lable = "Wrong user name or password";
+                notification.ShowDialog();
+                return;
             }
-            this.Close();
-            //Get information from sign in form
+            util.user = util.GetUserWhenLogin(username);
+
+            if (util.user != null && signInForm.txtPassword == util.user.password
+                    && signInForm.role == util.user.role)
+            {
+                //Sign in success
+                util.userName = signInForm.txtUserName;
+                util.user = util.GetUserWhenLogin(util.userName);
+
+                this.Hide();
+                //Get User (Set util and show form)
+                switch (util.user.role)
+                {
+                    case "student":
+                        AbstractUserClass student = new StudentClass();
+                        student.SetUtil();
+                        break;
+                    case "employer":
+                        AbstractUserClass employer = new EmployerClass();
+                        employer.SetUtil();
+                        break;
+                    case "admin":
+                        AbstractUserClass admin = new AdminClass();
+                        admin.SetUtil();
+                        break;
+                }
+                this.Close();
+            }
+            else
+            {
+                // Sign in Error
+                Validate_Notification notification = new Validate_Notification();
+                if (util.user == null || signInForm.txtPassword != util.user.password)
+                {
+                    notification.validate_Lable = "Wrong user name or password";
+                }
+                else if (signInForm.role == null)
+                {
+                    notification.validate_Lable = "Please choose your account type";
+                }
+                else if (signInForm.role != util.user.role)
+                {
+                    notification.validate_Lable = "Wrong account type, choose another account type";
+                }
+                notification.ShowDialog();
+                return;
+            }
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)
@@ -99,16 +131,38 @@ namespace final_oosee
                 return;
             }
 
-            //Create new user
-            string username = "student5";
-            string password = "student5";
-            string role = "student";
+            Validate_Notification notification = new Validate_Notification();
+            if (signUpForm.txtUserName == "")
+            {
+                notification.validate_Lable = "Please input user name";
+                notification.ShowDialog();
+                return;
+            }
+            if (signUpForm.txtPassword.Count() < 8)
+            {
+                notification.validate_Lable = "Pawword must have aleast 8 character";
+                notification.ShowDialog();
+                return;
+            }
+            else if (signUpForm.txtRePassword != signUpForm.txtPassword)
+            {
+                notification.validate_Lable = "Please reinput right password";
+                notification.ShowDialog();
+                return;
+            }
+            else if (signUpForm.role == null)
+            {
+                notification.validate_Lable = "Please input account type";
+                notification.ShowDialog();
+                return;
+            }
 
-            util.userName = username;
-            util.password = password;
-            util.role = role;
+            //Sign up success
+            util.userName = signUpForm.txtUserName;
+            util.password = signUpForm.txtPassword;
+            util.role = signUpForm.role;
 
-            switch (util.role)
+            switch (signUpForm.role)
             {
                 case "student":
                     AbstractUserClass student = new StudentClass();
@@ -123,6 +177,9 @@ namespace final_oosee
                     admin.InsertUser();
                     break;
             }
+            Register_Notifycation register_Notifycation = new Register_Notifycation();
+            register_Notifycation.ShowDialog();
+            
         }
     }
 }

@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.btnOK = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // label1
@@ -51,40 +51,38 @@
             this.label2.Location = new System.Drawing.Point(34, 75);
             this.label2.MaximumSize = new System.Drawing.Size(400, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(354, 150);
+            this.label2.Size = new System.Drawing.Size(382, 120);
             this.label2.TabIndex = 1;
-            this.label2.Text = "The system hasn\'t found you register information, please proceed to enter the inf" +
-    "ormation to see further contents";
+            this.label2.Text = "You haven\'t input your register information, please Login to enter the informatio" +
+    "n and see further contents";
             // 
-            // iconButton2
+            // btnOK
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(204)))), ((int)(((byte)(153)))));
-            this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(139)))), ((int)(((byte)(36)))));
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.White;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleRight;
-            this.iconButton2.IconColor = System.Drawing.Color.White;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 30;
-            this.iconButton2.Location = new System.Drawing.Point(452, 189);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(253, 36);
-            this.iconButton2.TabIndex = 2;
-            this.iconButton2.Text = "Enter information";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton2.UseVisualStyleBackColor = false;
+            this.btnOK.BackColor = System.Drawing.Color.Aqua;
+            this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOK.ForeColor = System.Drawing.Color.White;
+            this.btnOK.IconChar = FontAwesome.Sharp.IconChar.Check;
+            this.btnOK.IconColor = System.Drawing.Color.White;
+            this.btnOK.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnOK.Location = new System.Drawing.Point(479, 138);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(152, 56);
+            this.btnOK.TabIndex = 2;
+            this.btnOK.Text = "OK";
+            this.btnOK.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnOK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnOK.UseVisualStyleBackColor = false;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // Register_Notifycation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(732, 245);
-            this.Controls.Add(this.iconButton2);
+            this.ClientSize = new System.Drawing.Size(667, 245);
+            this.Controls.Add(this.btnOK);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Register_Notifycation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register Note";
@@ -97,6 +95,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton btnOK;
     }
 }

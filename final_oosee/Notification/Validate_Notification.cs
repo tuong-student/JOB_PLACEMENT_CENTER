@@ -17,6 +17,9 @@ namespace final_oosee.Notification
             InitializeComponent();
         }
 
-        
+        public String validate_Lable { 
+            get { return validation_errorLabel.Text.Trim(); }
+            set { validation_errorLabel.Text = value; }
+        }
     }
 }

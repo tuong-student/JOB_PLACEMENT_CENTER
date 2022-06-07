@@ -15,7 +15,7 @@ namespace final_oosee.AdministratorInterface
 {
     public partial class Administrator_ManageAccount : Form
     {
-        AbstractManager manager;
+        AbstractManager manager, subManger;
         BLUser blUser;
 
         public Administrator_ManageAccount()
@@ -39,6 +39,11 @@ namespace final_oosee.AdministratorInterface
         {
             util.userID = Convert.ToInt32(txtID.Text);
             manager.Delete();
+            subManger = new AbstractManager(new BLStudent());
+            subManger.DeleteBaseOnUserID();
+            subManger = new AbstractManager(new BLEmployer());
+            subManger.DeleteBaseOnUserID();
+            dgvUserData.DataSource = manager.GetTable();
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)

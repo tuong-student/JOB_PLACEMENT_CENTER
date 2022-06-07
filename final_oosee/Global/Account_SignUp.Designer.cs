@@ -66,7 +66,7 @@
             this.panelAccount_Insert.Location = new System.Drawing.Point(0, 0);
             this.panelAccount_Insert.Name = "panelAccount_Insert";
             this.panelAccount_Insert.Size = new System.Drawing.Size(800, 450);
-            this.panelAccount_Insert.TabIndex = 3;
+            this.panelAccount_Insert.TabIndex = 0;
             this.panelAccount_Insert.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAccount_Insert_Paint);
             // 
             // panel2
@@ -89,7 +89,7 @@
             this.radioBtnEmployer.Location = new System.Drawing.Point(201, 39);
             this.radioBtnEmployer.Name = "radioBtnEmployer";
             this.radioBtnEmployer.Size = new System.Drawing.Size(105, 25);
-            this.radioBtnEmployer.TabIndex = 1;
+            this.radioBtnEmployer.TabIndex = 4;
             this.radioBtnEmployer.TabStop = true;
             this.radioBtnEmployer.Text = "Employer";
             this.radioBtnEmployer.UseVisualStyleBackColor = true;
@@ -102,7 +102,7 @@
             this.radioBtnStudent.Location = new System.Drawing.Point(69, 39);
             this.radioBtnStudent.Name = "radioBtnStudent";
             this.radioBtnStudent.Size = new System.Drawing.Size(96, 25);
-            this.radioBtnStudent.TabIndex = 1;
+            this.radioBtnStudent.TabIndex = 3;
             this.radioBtnStudent.TabStop = true;
             this.radioBtnStudent.Text = "Student";
             this.radioBtnStudent.UseVisualStyleBackColor = true;
@@ -140,7 +140,7 @@
             this.txtPassword_reEnter.Location = new System.Drawing.Point(56, 8);
             this.txtPassword_reEnter.Name = "txtPassword_reEnter";
             this.txtPassword_reEnter.Size = new System.Drawing.Size(678, 29);
-            this.txtPassword_reEnter.TabIndex = 1;
+            this.txtPassword_reEnter.TabIndex = 2;
             this.txtPassword_reEnter.UseSystemPasswordChar = true;
             // 
             // pictureBox3
@@ -210,7 +210,7 @@
             this.txtUsername_signUp.Location = new System.Drawing.Point(56, 8);
             this.txtUsername_signUp.Name = "txtUsername_signUp";
             this.txtUsername_signUp.Size = new System.Drawing.Size(678, 29);
-            this.txtUsername_signUp.TabIndex = 1;
+            this.txtUsername_signUp.TabIndex = 0;
             this.txtUsername_signUp.TextChanged += new System.EventHandler(this.txtUsername_signIn_TextChanged);
             // 
             // pictureBox1
