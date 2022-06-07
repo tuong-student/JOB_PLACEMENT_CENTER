@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using final_oosee.Global;
 
 namespace final_oosee.AdministratorInterface
 {
@@ -42,6 +43,14 @@ namespace final_oosee.AdministratorInterface
         {
             administrator_account.Hide();
             administrator_statistic.Show();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Account_Insert account_Insert_Form = new Account_Insert();
+            account_Insert_Form.ShowDialog();
+            this.Close();
         }
     }
 }

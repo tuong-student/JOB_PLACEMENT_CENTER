@@ -31,7 +31,23 @@ namespace final_oosee.Bridge
 
         public void Delete()
         {
-            bsLayer.Delete();
+            DialogResult dialogResult = MessageBox.Show("Are you want to delete ?", "Confirm dialog", MessageBoxButtons.YesNo);
+            if(dialogResult == DialogResult.Yes)
+            {
+                bsLayer.Delete();
+            }
+        }
+
+        public void DeleteBaseOnUserID()
+        {
+            try
+            {
+                bsLayer.DeleteBaseOnUseID();
+            }
+            catch
+            {
+
+            }
         }
 
         public void Update()

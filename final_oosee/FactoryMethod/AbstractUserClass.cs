@@ -24,7 +24,6 @@ namespace final_oosee.FactoryMethod
 
             user.InsertToDB();
             user.SetUtil();
-            user.OpenForm();
         }
     }
 }

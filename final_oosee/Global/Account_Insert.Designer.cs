@@ -114,6 +114,7 @@
             // 
             // panelAccount_Insert
             // 
+            this.panelAccount_Insert.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelAccount_Insert.Controls.Add(this.btnSignUpForm);
             this.panelAccount_Insert.Controls.Add(this.btnLogin);
             this.panelAccount_Insert.Controls.Add(this.exitBtn);
@@ -133,7 +134,7 @@
             this.btnSignUpForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignUpForm.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignUpForm.ForeColor = System.Drawing.Color.White;
-            this.btnSignUpForm.Location = new System.Drawing.Point(589, 543);
+            this.btnSignUpForm.Location = new System.Drawing.Point(587, 541);
             this.btnSignUpForm.Name = "btnSignUpForm";
             this.btnSignUpForm.Size = new System.Drawing.Size(95, 41);
             this.btnSignUpForm.TabIndex = 7;
@@ -150,7 +151,7 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(121)))), ((int)(((byte)(49)))));
-            this.btnLogin.Location = new System.Drawing.Point(463, 543);
+            this.btnLogin.Location = new System.Drawing.Point(461, 541);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(95, 41);
             this.btnLogin.TabIndex = 8;
@@ -166,7 +167,7 @@
             this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitBtn.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(100)))), ((int)(((byte)(20)))));
-            this.exitBtn.Location = new System.Drawing.Point(629, 0);
+            this.exitBtn.Location = new System.Drawing.Point(627, 0);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(67, 47);
             this.exitBtn.TabIndex = 5;

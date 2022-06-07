@@ -23,6 +23,18 @@ namespace final_oosee.Business
             return true;
         }
 
+        public bool DeleteBaseOnUseID()
+        {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
+            var stQuery = from st in jobManagemetDataContext.EMPLOYERs
+                          where st.userID == util.userID
+                          select st;
+
+            jobManagemetDataContext.EMPLOYERs.DeleteAllOnSubmit(stQuery);
+            jobManagemetDataContext.SubmitChanges();
+            return true;
+        }
+
         public ITable GetTable()
         {
             return GetTableObjectClass<EMPLOYER>.GetTable();

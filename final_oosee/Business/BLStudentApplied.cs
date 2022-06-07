@@ -23,6 +23,11 @@ namespace final_oosee.Business
             return true;
         }
 
+        public bool DeleteBaseOnUseID()
+        {
+            throw new NotImplementedException();
+        }
+
         public ITable GetTable()
         {
             return GetTableObjectClass<studentApplied>.GetTable();

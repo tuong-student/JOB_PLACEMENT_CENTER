@@ -78,5 +78,17 @@ namespace final_oosee.Business
                             || P.additionalCondition.Contains(searchKeyWord) || P.address.Contains(searchKeyWord) || P.gender.Contains(searchKeyWord));
             dgv.DataSource = result.ToList();
         }
+
+        public bool DeleteBaseOnUseID()
+        {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
+            var stQuery = from st in jobManagemetDataContext.STUDENTs
+                          where st.userID == util.userID
+                          select st;
+
+            jobManagemetDataContext.STUDENTs.DeleteAllOnSubmit(stQuery);
+            jobManagemetDataContext.SubmitChanges();
+            return true;
+        }
     }
 }

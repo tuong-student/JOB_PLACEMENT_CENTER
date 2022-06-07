@@ -33,7 +33,7 @@
             this.manageCVBtn = new FontAwesome.Sharp.IconButton();
             this.homeBtn = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.sideBarButton = new FontAwesome.Sharp.IconButton();
+            this.btnLogout = new FontAwesome.Sharp.IconButton();
             this.panelContent = new System.Windows.Forms.Panel();
             this.panelSideBar.SuspendLayout();
             this.panelLogo.SuspendLayout();
@@ -119,25 +119,31 @@
             // 
             // panelLogo
             // 
-            this.panelLogo.Controls.Add(this.sideBarButton);
+            this.panelLogo.Controls.Add(this.btnLogout);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(230, 70);
             this.panelLogo.TabIndex = 0;
             // 
-            // sideBarButton
+            // btnLogout
             // 
-            this.sideBarButton.FlatAppearance.BorderSize = 0;
-            this.sideBarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sideBarButton.IconChar = FontAwesome.Sharp.IconChar.Bars;
-            this.sideBarButton.IconColor = System.Drawing.Color.White;
-            this.sideBarButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.sideBarButton.Location = new System.Drawing.Point(3, 7);
-            this.sideBarButton.Name = "sideBarButton";
-            this.sideBarButton.Size = new System.Drawing.Size(60, 60);
-            this.sideBarButton.TabIndex = 1;
-            this.sideBarButton.UseVisualStyleBackColor = true;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.IconChar = FontAwesome.Sharp.IconChar.AngleDoubleLeft;
+            this.btnLogout.IconColor = System.Drawing.Color.White;
+            this.btnLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLogout.Location = new System.Drawing.Point(0, 4);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(227, 60);
+            this.btnLogout.TabIndex = 6;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // panelContent
             // 
@@ -172,10 +178,10 @@
         private System.Windows.Forms.Panel panelSideBar;
         private System.Windows.Forms.Panel panelContent;
         private System.Windows.Forms.Panel panelLogo;
-        private FontAwesome.Sharp.IconButton sideBarButton;
         private FontAwesome.Sharp.IconButton homeBtn;
         private FontAwesome.Sharp.IconButton logOutButton;
         private FontAwesome.Sharp.IconButton manageCVBtn;
+        private FontAwesome.Sharp.IconButton btnLogout;
     }
 }
 

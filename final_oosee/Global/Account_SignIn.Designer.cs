@@ -116,7 +116,7 @@
             this.txtPassword_signIn.Location = new System.Drawing.Point(56, 8);
             this.txtPassword_signIn.Name = "txtPassword_signIn";
             this.txtPassword_signIn.Size = new System.Drawing.Size(678, 29);
-            this.txtPassword_signIn.TabIndex = 1;
+            this.txtPassword_signIn.TabIndex = 2;
             this.txtPassword_signIn.UseSystemPasswordChar = true;
             // 
             // pictureBox2
@@ -153,7 +153,7 @@
             this.radioBtnAdmin.Location = new System.Drawing.Point(376, 39);
             this.radioBtnAdmin.Name = "radioBtnAdmin";
             this.radioBtnAdmin.Size = new System.Drawing.Size(141, 25);
-            this.radioBtnAdmin.TabIndex = 1;
+            this.radioBtnAdmin.TabIndex = 5;
             this.radioBtnAdmin.TabStop = true;
             this.radioBtnAdmin.Text = "Administrator";
             this.radioBtnAdmin.UseVisualStyleBackColor = true;
@@ -169,7 +169,7 @@
             this.radioBtnEmployer.Location = new System.Drawing.Point(224, 39);
             this.radioBtnEmployer.Name = "radioBtnEmployer";
             this.radioBtnEmployer.Size = new System.Drawing.Size(105, 25);
-            this.radioBtnEmployer.TabIndex = 1;
+            this.radioBtnEmployer.TabIndex = 4;
             this.radioBtnEmployer.TabStop = true;
             this.radioBtnEmployer.Text = "Employer";
             this.radioBtnEmployer.UseVisualStyleBackColor = true;
@@ -185,7 +185,7 @@
             this.radioBtnStudent.Location = new System.Drawing.Point(45, 39);
             this.radioBtnStudent.Name = "radioBtnStudent";
             this.radioBtnStudent.Size = new System.Drawing.Size(96, 25);
-            this.radioBtnStudent.TabIndex = 1;
+            this.radioBtnStudent.TabIndex = 3;
             this.radioBtnStudent.TabStop = true;
             this.radioBtnStudent.Text = "Student";
             this.radioBtnStudent.UseVisualStyleBackColor = true;
