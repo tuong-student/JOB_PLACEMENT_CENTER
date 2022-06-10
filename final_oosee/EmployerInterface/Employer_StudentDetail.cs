@@ -28,8 +28,16 @@ namespace final_oosee.EmployerInterface
             blStudentApplied = new BLStudentApplied();
             manager = new AbstractManager(blStudentApplied);
             //When load, use information in util class to show in CV zone
+            txtFullName.Text = student.fullName;
+            txtID.Text = student.ID.ToString().Trim();
+            txtDateOfBirth.Text = student.dateOfBirth;
+            txtPhone.Text = student.phoneNumber;
+            txtAddress.Text = student.address;
+            txtGender.Text = student.gender;
+            txtHealthCondition.Text = student.healthCondition;
+            txtAdditionalCondition.Text = student.additionalCondition;
         }
-        
+
 
         private void btnRemind_Click(object sender, EventArgs e)
         {
