@@ -8,8 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Linq;
-using final_oosee.Business;
-using final_oosee.Global;
+using final_oosee.StudentInterfaces;
 
 namespace final_oosee
 {
@@ -17,12 +16,15 @@ namespace final_oosee
     {
         StudentHome studentHomeForm;
         Student_CV_Form studentCVForm;
+        StudentApplied_Form studentAppliedForm;
+        
         public MainForm_Student()
         {
             InitializeComponent();
 
             studentHomeForm = new StudentHome() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             studentCVForm = new Student_CV_Form() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            studentAppliedForm = new StudentApplied_Form() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.BackColor = Color.FromArgb(253, 202, 155);
         }
 
@@ -30,6 +32,7 @@ namespace final_oosee
         {
             this.panelContent.Controls.Add(studentHomeForm);
             this.panelContent.Controls.Add(studentCVForm);
+            this.panelContent.Controls.Add(studentAppliedForm);
             studentHomeForm.Show();
         }
 
@@ -50,6 +53,13 @@ namespace final_oosee
             Account_Insert account_Insert_Form = new Account_Insert();
             account_Insert_Form.ShowDialog();
             this.Close();
+        }
+
+        private void btnAppliedJob_Click(object sender, EventArgs e)
+        {
+            studentHomeForm.Hide();
+            studentCVForm.Hide();
+            studentAppliedForm.Show();
         }
     }
 }

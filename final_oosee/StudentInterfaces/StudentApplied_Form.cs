@@ -7,14 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using final_oosee.Global;
 
 namespace final_oosee.StudentInterfaces
 {
-    public partial class Testing : Form
+    public partial class StudentApplied_Form : Form
     {
-        public Testing()
+        public StudentApplied_Form()
         {
             InitializeComponent();
+            LoadData();
+        }
+
+        void LoadData()
+        {
+            dgvAppliedJob.DataSource = util.GetStudentAppliedListBasedOnStudentID(util.studentID);
         }
     }
 }

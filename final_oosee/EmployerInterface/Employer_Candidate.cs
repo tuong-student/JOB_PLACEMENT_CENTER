@@ -18,15 +18,11 @@ namespace final_oosee.EmployerInterface
         //This form use to see list of student applied to this emplyer's job
         List<JOB> jobList;
         List<studentApplied> studentAppliedList;
-
-        AbstractManager manager;
-        BLStudentApplied blStudentApplied;
+        
 
         public Employer_Candidate()
         {
             InitializeComponent();
-            blStudentApplied = new BLStudentApplied();
-            manager = new AbstractManager(blStudentApplied);
         }
 
         private void panelSearch_Paint(object sender, PaintEventArgs e)
@@ -44,6 +40,7 @@ namespace final_oosee.EmployerInterface
             studentApplied stApplied = util.GetStudentApplied(util.jobAppliedID);
             Employer_StudentDetail stuDetail_Form = new Employer_StudentDetail(student, stApplied);
             stuDetail_Form.ShowDialog();
+            LoadData();
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
@@ -59,7 +56,7 @@ namespace final_oosee.EmployerInterface
         void LoadData()
         {
             studentAppliedList = new List<studentApplied>();
-            jobList = new List<JOB>();
+            studentAppliedList.Clear();
             //Get the job list from DB
             jobList = util.GetJobList(util.employerID);
             //Base on jobID in the Job list -> get student who applied to the job
@@ -73,7 +70,7 @@ namespace final_oosee.EmployerInterface
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            List<studentApplied> oldData = studentAppliedList;
+            //List<studentApplied> oldData = studentAppliedList;
             List<studentApplied> result = new List<studentApplied>();
             foreach(JOB job in jobList)
             {
@@ -83,7 +80,7 @@ namespace final_oosee.EmployerInterface
 
             if(txtSearch.Text == "")
             {
-                dgvCandidateList.DataSource = oldData;
+                //dgvCandidateList.DataSource = oldData;
             }
         }
     }

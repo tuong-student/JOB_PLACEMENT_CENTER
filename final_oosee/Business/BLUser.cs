@@ -14,11 +14,11 @@ namespace final_oosee.Business
         public bool Delete()
         {
             JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
-            var stQuery = from st in jobManagemetDataContext.USERs
+            var stQuery = from st in jobManagemetDataContext.USERS
                           where st.ID == util.userID
                           select st;
 
-            jobManagemetDataContext.USERs.DeleteAllOnSubmit(stQuery);
+            jobManagemetDataContext.USERS.DeleteAllOnSubmit(stQuery);
             jobManagemetDataContext.SubmitChanges();
             return true;
         }
@@ -30,33 +30,33 @@ namespace final_oosee.Business
 
         public ITable GetTable()
         {
-            return GetTableObjectClass<USER>.GetTable();
+            return GetTableObjectClass<USERS>.GetTable();
         }
 
         public bool Insert()
         {
             JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
-            USER user = new USER();
+            USERS user = new USERS();
             user.username = util.userName;
             user.password = util.password;
             user.role = util.role;
 
-            jobManagemetDataContext.USERs.InsertOnSubmit(user);
-            jobManagemetDataContext.USERs.Context.SubmitChanges();
+            jobManagemetDataContext.USERS.InsertOnSubmit(user);
+            jobManagemetDataContext.USERS.Context.SubmitChanges();
             return true;
         }
 
         public void Search(DataGridView dgv, string searchKeyWord)
         {
             JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
-            var result = jobManagemetDataContext.USERs.Where(P => P.username.Contains(searchKeyWord) || P.role.Contains(searchKeyWord));
+            var result = jobManagemetDataContext.USERS.Where(P => P.username.Contains(searchKeyWord) || P.role.Contains(searchKeyWord));
             dgv.DataSource = result.ToList();
         }
 
         public bool Update()
         {
             JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
-            var stQuery = (from st in jobManagemetDataContext.USERs
+            var stQuery = (from st in jobManagemetDataContext.USERS
                            where st.ID == util.userID
                            select st).SingleOrDefault();
 

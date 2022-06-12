@@ -28,7 +28,7 @@ namespace final_oosee.FactoryMethod
             manager = new AbstractManager(blUser);
             manager.Insert();
             manager = new AbstractManager(blEmployer);
-            USER user = util.GetUserWhenLogin(util.userName);
+            USERS user = util.GetUserWhenLogin(util.userName);
             util.userID = user.ID;
             manager.Insert();
 

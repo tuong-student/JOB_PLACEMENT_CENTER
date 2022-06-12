@@ -51,6 +51,7 @@ namespace final_oosee.EmployerInterface
             util.studentID = (int)stApplied.studentID;
             util.jobName = stApplied.jobName;
             manager.Update();
+            this.Close();
         }
 
         private void btnDecline_Click(object sender, EventArgs e)
@@ -60,6 +61,7 @@ namespace final_oosee.EmployerInterface
             util.studentID = (int)stApplied.studentID;
             util.jobName = stApplied.jobName;
             manager.Update();
+            this.Close();
         }
 
         private void Employer_StudentDetail_Load(object sender, EventArgs e)

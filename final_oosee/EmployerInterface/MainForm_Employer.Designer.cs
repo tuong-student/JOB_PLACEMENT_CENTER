@@ -2,42 +2,39 @@
 {
     partial class MainForm_Employer
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+            /// <summary>
+            /// Required designer variable.
+            /// </summary>
+            private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
+            /// <summary>
+            /// Clean up any resources being used.
+            /// </summary>
+            /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+            protected override void Dispose(bool disposing)
             {
-                components.Dispose();
+                if (disposing && (components != null))
+                {
+                    components.Dispose();
+                }
+                base.Dispose(disposing);
             }
-            base.Dispose(disposing);
-        }
 
-        #region Windows Form Designer generated code
+            #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
+            /// <summary>
+            /// Required method for Designer support - do not modify
+            /// the contents of this method with the code editor.
+            /// </summary>
+            private void InitializeComponent()
+            {
             this.panelSideBar = new System.Windows.Forms.Panel();
             this.changeInformationBtn = new FontAwesome.Sharp.IconButton();
             this.logOutButton = new FontAwesome.Sharp.IconButton();
             this.eventManageBtn = new FontAwesome.Sharp.IconButton();
             this.homeBtn = new FontAwesome.Sharp.IconButton();
-            this.panelLogo = new System.Windows.Forms.Panel();
             this.panelContent = new System.Windows.Forms.Panel();
-            this.btnLogout = new FontAwesome.Sharp.IconButton();
             this.panelSideBar.SuspendLayout();
-            this.panelLogo.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSideBar
@@ -47,7 +44,6 @@
             this.panelSideBar.Controls.Add(this.logOutButton);
             this.panelSideBar.Controls.Add(this.eventManageBtn);
             this.panelSideBar.Controls.Add(this.homeBtn);
-            this.panelSideBar.Controls.Add(this.panelLogo);
             this.panelSideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideBar.Location = new System.Drawing.Point(0, 0);
             this.panelSideBar.Name = "panelSideBar";
@@ -66,7 +62,7 @@
             this.changeInformationBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.changeInformationBtn.IconSize = 30;
             this.changeInformationBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.changeInformationBtn.Location = new System.Drawing.Point(0, 190);
+            this.changeInformationBtn.Location = new System.Drawing.Point(0, 120);
             this.changeInformationBtn.Name = "changeInformationBtn";
             this.changeInformationBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.changeInformationBtn.Size = new System.Drawing.Size(230, 60);
@@ -97,6 +93,7 @@
             this.logOutButton.Text = "Log Out";
             this.logOutButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.logOutButton.UseVisualStyleBackColor = true;
+            this.logOutButton.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // eventManageBtn
             // 
@@ -110,7 +107,7 @@
             this.eventManageBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.eventManageBtn.IconSize = 30;
             this.eventManageBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.eventManageBtn.Location = new System.Drawing.Point(0, 130);
+            this.eventManageBtn.Location = new System.Drawing.Point(0, 60);
             this.eventManageBtn.Name = "eventManageBtn";
             this.eventManageBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.eventManageBtn.Size = new System.Drawing.Size(230, 60);
@@ -133,7 +130,7 @@
             this.homeBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.homeBtn.IconSize = 30;
             this.homeBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.homeBtn.Location = new System.Drawing.Point(0, 70);
+            this.homeBtn.Location = new System.Drawing.Point(0, 0);
             this.homeBtn.Name = "homeBtn";
             this.homeBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.homeBtn.Size = new System.Drawing.Size(230, 60);
@@ -142,15 +139,6 @@
             this.homeBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.homeBtn.UseVisualStyleBackColor = true;
             this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.Controls.Add(this.btnLogout);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(230, 70);
-            this.panelLogo.TabIndex = 0;
             // 
             // panelContent
             // 
@@ -162,24 +150,6 @@
             this.panelContent.Name = "panelContent";
             this.panelContent.Size = new System.Drawing.Size(1078, 621);
             this.panelContent.TabIndex = 2;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.FlatAppearance.BorderSize = 0;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.IconChar = FontAwesome.Sharp.IconChar.AngleDoubleLeft;
-            this.btnLogout.IconColor = System.Drawing.Color.White;
-            this.btnLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLogout.Location = new System.Drawing.Point(12, 7);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(140, 60);
-            this.btnLogout.TabIndex = 5;
-            this.btnLogout.Text = "Logout";
-            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLogout.UseVisualStyleBackColor = true;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // MainForm_Employer
             // 
@@ -193,20 +163,17 @@
             this.Text = "MainForm_Employer";
             this.Load += new System.EventHandler(this.MainForm_Employer_Load);
             this.panelSideBar.ResumeLayout(false);
-            this.panelLogo.ResumeLayout(false);
             this.ResumeLayout(false);
 
-        }
+            }
 
-        #endregion
+            #endregion
 
-        private System.Windows.Forms.Panel panelSideBar;
-        private FontAwesome.Sharp.IconButton logOutButton;
-        private FontAwesome.Sharp.IconButton eventManageBtn;
-        private FontAwesome.Sharp.IconButton homeBtn;
-        private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Panel panelContent;
-        private FontAwesome.Sharp.IconButton changeInformationBtn;
-        private FontAwesome.Sharp.IconButton btnLogout;
+            private System.Windows.Forms.Panel panelSideBar;
+            private FontAwesome.Sharp.IconButton logOutButton;
+            private FontAwesome.Sharp.IconButton eventManageBtn;
+            private FontAwesome.Sharp.IconButton homeBtn;
+            private System.Windows.Forms.Panel panelContent;
+            private FontAwesome.Sharp.IconButton changeInformationBtn;
     }
 }

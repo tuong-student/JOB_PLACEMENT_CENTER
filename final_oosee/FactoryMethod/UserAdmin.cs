@@ -30,7 +30,7 @@ namespace final_oosee.FactoryMethod
 
         public void SetUtil()
         {
-            USER admin = util.GetUserWhenLogin(util.userName);
+            USERS admin = util.GetUserWhenLogin(util.userName);
             util.password = admin.password;
         }
     }

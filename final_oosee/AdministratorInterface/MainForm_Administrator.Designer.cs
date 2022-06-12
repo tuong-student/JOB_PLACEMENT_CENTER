@@ -32,11 +32,8 @@
             this.statisticBtn = new FontAwesome.Sharp.IconButton();
             this.accountManageBtn = new FontAwesome.Sharp.IconButton();
             this.logOutButton = new FontAwesome.Sharp.IconButton();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.btnLogout = new FontAwesome.Sharp.IconButton();
             this.panelContent = new System.Windows.Forms.Panel();
             this.panelSideBar.SuspendLayout();
-            this.panelLogo.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSideBar
@@ -45,7 +42,6 @@
             this.panelSideBar.Controls.Add(this.statisticBtn);
             this.panelSideBar.Controls.Add(this.accountManageBtn);
             this.panelSideBar.Controls.Add(this.logOutButton);
-            this.panelSideBar.Controls.Add(this.panelLogo);
             this.panelSideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideBar.Location = new System.Drawing.Point(0, 0);
             this.panelSideBar.Name = "panelSideBar";
@@ -64,7 +60,7 @@
             this.statisticBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.statisticBtn.IconSize = 30;
             this.statisticBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.statisticBtn.Location = new System.Drawing.Point(0, 130);
+            this.statisticBtn.Location = new System.Drawing.Point(0, 60);
             this.statisticBtn.Name = "statisticBtn";
             this.statisticBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.statisticBtn.Size = new System.Drawing.Size(230, 60);
@@ -87,7 +83,7 @@
             this.accountManageBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.accountManageBtn.IconSize = 30;
             this.accountManageBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.accountManageBtn.Location = new System.Drawing.Point(0, 70);
+            this.accountManageBtn.Location = new System.Drawing.Point(0, 0);
             this.accountManageBtn.Name = "accountManageBtn";
             this.accountManageBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.accountManageBtn.Size = new System.Drawing.Size(230, 60);
@@ -118,33 +114,7 @@
             this.logOutButton.Text = "Log Out";
             this.logOutButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.logOutButton.UseVisualStyleBackColor = true;
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.Controls.Add(this.btnLogout);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(230, 70);
-            this.panelLogo.TabIndex = 0;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.FlatAppearance.BorderSize = 0;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.IconChar = FontAwesome.Sharp.IconChar.AngleDoubleLeft;
-            this.btnLogout.IconColor = System.Drawing.Color.White;
-            this.btnLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLogout.Location = new System.Drawing.Point(3, 7);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(140, 60);
-            this.btnLogout.TabIndex = 1;
-            this.btnLogout.Text = "Logout";
-            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLogout.UseVisualStyleBackColor = true;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            this.logOutButton.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // panelContent
             // 
@@ -169,7 +139,6 @@
             this.Text = "MainForm_Administrator";
             this.Load += new System.EventHandler(this.MainForm_Administrator_Load);
             this.panelSideBar.ResumeLayout(false);
-            this.panelLogo.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -180,8 +149,6 @@
         private FontAwesome.Sharp.IconButton statisticBtn;
         private FontAwesome.Sharp.IconButton accountManageBtn;
         private FontAwesome.Sharp.IconButton logOutButton;
-        private System.Windows.Forms.Panel panelLogo;
-        private FontAwesome.Sharp.IconButton btnLogout;
         private System.Windows.Forms.Panel panelContent;
     }
 }
