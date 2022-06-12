@@ -158,11 +158,11 @@
             this.btnAdd.IconColor = System.Drawing.Color.White;
             this.btnAdd.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAdd.IconSize = 30;
-            this.btnAdd.Location = new System.Drawing.Point(64, 548);
+            this.btnAdd.Location = new System.Drawing.Point(42, 548);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(112, 45);
+            this.btnAdd.Size = new System.Drawing.Size(134, 45);
             this.btnAdd.TabIndex = 6;
-            this.btnAdd.Text = "Add";
+            this.btnAdd.Text = "Confirm";
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -300,6 +300,7 @@
             this.dgvJobEvent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvJobEvent.Location = new System.Drawing.Point(0, 0);
             this.dgvJobEvent.Name = "dgvJobEvent";
+            this.dgvJobEvent.ReadOnly = true;
             this.dgvJobEvent.RowHeadersWidth = 51;
             this.dgvJobEvent.RowTemplate.Height = 24;
             this.dgvJobEvent.Size = new System.Drawing.Size(718, 399);

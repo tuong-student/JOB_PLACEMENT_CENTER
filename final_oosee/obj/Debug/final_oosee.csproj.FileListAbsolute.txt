@@ -141,3 +141,4 @@ D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final
 D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.EmployerInterface.StudentCV_Information.resources
 D:\CodesExercises\School\Nam 3\Ky 2\OOSE\cloneProject\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.Notification.Validate_Notification.resources
 E:\DOWNLOAD\DOWNLOAD\STUDY\Windows_Programming\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.Notification.Validate_Notification.resources
+E:\DOWNLOAD\DOWNLOAD\STUDY\Windows_Programming\JOB_PLACEMENT_CENTER\final_oosee\obj\Debug\final_oosee.StudentInterfaces.StudentApplied_Form.resources

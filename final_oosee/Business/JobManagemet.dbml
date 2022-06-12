@@ -9,14 +9,6 @@
       <Column Name="userID" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.[USER]" Member="USERs">
-    <Type Name="USER">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="username" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="password" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="role" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.JOB" Member="JOBs">
     <Type Name="JOB">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -47,6 +39,14 @@
       <Column Name="jobID" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="jobName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="status" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.USERS" Member="USERS">
+    <Type Name="USERS">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="role" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

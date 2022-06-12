@@ -111,6 +111,7 @@
             this.dgvCandidateList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCandidateList.Location = new System.Drawing.Point(0, 0);
             this.dgvCandidateList.Name = "dgvCandidateList";
+            this.dgvCandidateList.ReadOnly = true;
             this.dgvCandidateList.RowHeadersWidth = 51;
             this.dgvCandidateList.RowTemplate.Height = 24;
             this.dgvCandidateList.Size = new System.Drawing.Size(1191, 477);

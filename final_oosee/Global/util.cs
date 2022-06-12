@@ -13,7 +13,7 @@ namespace final_oosee.Global
 {
     public static class util
     {
-        public static USER user;
+        public static USERS user;
 
         public static string userName;
         public static string password;
@@ -40,26 +40,21 @@ namespace final_oosee.Global
         public static string stfullName;
         public static string jobName;
 
-        public static Table<EMPLOYER> employerTable;
-        public static Table<STUDENT> studentTable;
-        public static Table<JOB> jobTable;
-        public static Table<USER> userTable;
-        public static Table<studentApplied> studentAppliedTable;
-
-        static JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
-
         public static EMPLOYER GetEmployer(int employerID)
         {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
             return (EMPLOYER)jobManagemetDataContext.EMPLOYERs.Where(P => P.ID == employerID).Single();
         }
 
         public static EMPLOYER GetEmployerBaseOnUserID(int userID)
         {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
             return (EMPLOYER)jobManagemetDataContext.EMPLOYERs.Where(P => P.userID == userID).Single();
         }
 
         public static STUDENT GetStudent(int studentID)
         {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
             STUDENT stu = new STUDENT();
             stu = (STUDENT)jobManagemetDataContext.STUDENTs.Where(P => P.ID == studentID).Single();
 
@@ -76,31 +71,36 @@ namespace final_oosee.Global
 
         public static STUDENT GetStudentBaseOnUserID(int userID)
         {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
             return (STUDENT) jobManagemetDataContext.STUDENTs.Where(P => P.userID == userID).Single();
         }
 
         public static JOB GetJob(int jobID)
         {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
             return (JOB) jobManagemetDataContext.JOBs.Where(P => P.ID == jobID).Single();
         }
 
         public static List<JOB> GetJobList(int emID)
         {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
             var jobs = jobManagemetDataContext.JOBs.Where(P => P.employerID == emID);
 
             return jobs.ToList();
         }
 
-        public static USER GetUser(int userID)
+        public static USERS GetUser(int userID)
         {
-            return (USER)jobManagemetDataContext.USERs.Where(P => P.ID == userID).Single();
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
+            return (USERS)jobManagemetDataContext.USERS.Where(P => P.ID == userID).Single();
         }
 
-        public static USER GetUserWhenLogin(string userName)
+        public static USERS GetUserWhenLogin(string userName)
         {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
             try
             {
-                util.user = (USER)jobManagemetDataContext.USERs.Where(P => P.username.Equals(userName)).Single();
+                util.user = (USERS)jobManagemetDataContext.USERS.Where(P => P.username.Equals(userName)).Single();
 
                 return util.user;
             }
@@ -112,50 +112,68 @@ namespace final_oosee.Global
 
         public static List<studentApplied> GetStudentAppliedList(int jobID)
         {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
+            jobManagemetDataContext = new JobManagemetDataContext();
             var result = jobManagemetDataContext.studentApplieds.Where(P => P.jobID == jobID);
+
+            return result.ToList();
+        }
+
+        public static List<studentApplied> GetStudentAppliedListBasedOnStudentID(int stuID)
+        {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
+            var result = jobManagemetDataContext.studentApplieds.Where(P => P.studentID == stuID);
 
             return result.ToList();
         }
 
         public static studentApplied GetStudentApplied(int studentAppliedID)
         {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
             return (studentApplied) jobManagemetDataContext.studentApplieds.Where(p => p.ID == studentAppliedID).Single();
         }
 
         public static List<studentApplied> SearchStudentAppliedBaseOnKeyWord(string keyWord, int jobID)
         {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
             var result = jobManagemetDataContext.studentApplieds.Where(P => P.jobID == jobID && P.jobName.Contains(keyWord));
             return result.ToList();
         }
 
         public static List<JOB> SearchJobBaseOnKeyWord(string keyWord, int emID)
         {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
             var result = jobManagemetDataContext.JOBs.Where(P => P.employerID == emID && (P.jobName.Contains(keyWord) || P.jobDescription.Contains(keyWord) || P.address.Contains(keyWord)));
             return result.ToList();
         }
 
         public static int GetUserNumber()
         {
-            return jobManagemetDataContext.USERs.Count();
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
+            return jobManagemetDataContext.USERS.Count();
         }
 
         public static int GetStudentNumber()
         {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
             return jobManagemetDataContext.STUDENTs.Count();
         }
 
         public static int GetEmployerNumber()
         {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
             return jobManagemetDataContext.EMPLOYERs.Count();
         }
 
         public static int GetJobNumber()
         {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
             return jobManagemetDataContext.JOBs.Count();
         }
 
         public static int GetStudentAppliedNumber()
         {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
             return jobManagemetDataContext.studentApplieds.Count();
         }
     }
