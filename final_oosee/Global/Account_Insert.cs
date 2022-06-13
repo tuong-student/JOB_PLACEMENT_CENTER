@@ -156,6 +156,14 @@ namespace final_oosee
                 notification.ShowDialog();
                 return;
             }
+            if(util.GetUserWhenLogin(signUpForm.txtUserName) != null)
+            {
+                //Already have this username in DB
+                //Announce for user
+                notification.validate_Lable = "username already taken";
+                notification.ShowDialog();
+                return;
+            }
 
             //Sign up success
             util.userName = signUpForm.txtUserName;

@@ -31,6 +31,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvAppliedJob = new System.Windows.Forms.DataGridView();
             this.lbJobDescription = new System.Windows.Forms.Label();
+            this.btnRefresh = new FontAwesome.Sharp.IconButton();
+            this.btnRemove = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAppliedJob)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +61,7 @@
             this.dgvAppliedJob.RowTemplate.Height = 24;
             this.dgvAppliedJob.Size = new System.Drawing.Size(863, 331);
             this.dgvAppliedJob.TabIndex = 0;
+            this.dgvAppliedJob.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAppliedJob_CellClick);
             // 
             // lbJobDescription
             // 
@@ -71,11 +74,52 @@
             this.lbJobDescription.TabIndex = 4;
             this.lbJobDescription.Text = "Applied Job";
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.SystemColors.Control;
+            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(139)))), ((int)(((byte)(36)))));
+            this.btnRefresh.IconChar = FontAwesome.Sharp.IconChar.Redo;
+            this.btnRefresh.IconColor = System.Drawing.Color.Black;
+            this.btnRefresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnRefresh.IconSize = 35;
+            this.btnRefresh.Location = new System.Drawing.Point(216, 9);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(46, 45);
+            this.btnRefresh.TabIndex = 8;
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // btnRemove
+            // 
+            this.btnRemove.BackColor = System.Drawing.SystemColors.Control;
+            this.btnRemove.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemove.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemove.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(139)))), ((int)(((byte)(36)))));
+            this.btnRemove.IconChar = FontAwesome.Sharp.IconChar.FileExcel;
+            this.btnRemove.IconColor = System.Drawing.Color.Black;
+            this.btnRemove.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnRemove.IconSize = 35;
+            this.btnRemove.Location = new System.Drawing.Point(289, 10);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(120, 45);
+            this.btnRemove.TabIndex = 9;
+            this.btnRemove.Text = "Remove";
+            this.btnRemove.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRemove.UseVisualStyleBackColor = false;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            // 
             // StudentApplied_Form
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(887, 436);
+            this.Controls.Add(this.btnRemove);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.lbJobDescription);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -93,5 +137,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgvAppliedJob;
         private System.Windows.Forms.Label lbJobDescription;
+        private FontAwesome.Sharp.IconButton btnRefresh;
+        private FontAwesome.Sharp.IconButton btnRemove;
     }
 }

@@ -38,11 +38,28 @@ namespace final_oosee.AdministratorInterface
         private void deleteAccountBtn_Click(object sender, EventArgs e)
         {
             util.userID = Convert.ToInt32(txtID.Text);
-            manager.Delete();
-            subManger = new AbstractManager(new BLStudent());
-            subManger.DeleteBaseOnUserID();
-            subManger = new AbstractManager(new BLEmployer());
-            subManger.DeleteBaseOnUserID();
+            if (dgvUserData.CurrentRow.Cells[3].Value.ToString() == "student")
+            {
+                STUDENT stu = new STUDENT();
+                stu = util.GetStudentBaseOnUserID(util.userID);
+                util.DeleteAppliedBasedOnStudentID(stu.ID);
+                subManger = new AbstractManager(new BLStudent());
+                subManger.DeleteBaseOnUserID(); //Delete in student table
+            }
+            else
+            {
+                EMPLOYER em = new EMPLOYER();
+                em = util.GetEmployerBaseOnUserID(util.userID);
+                List<JOB> jobs = util.GetJobList(em.ID);
+                foreach(JOB job in jobs)
+                {
+                    util.DeleteAppliedBasedOnJobID(job.ID); //Delete the job in studentApplied table
+                }
+                util.DeleteJobBasedOnEmployerID(em.ID); //Delete the job in job table
+                subManger = new AbstractManager(new BLEmployer());
+                subManger.DeleteBaseOnUserID(); //Delete in employer table
+            }
+            manager.Delete(); //Delete in user table
             dgvUserData.DataSource = manager.GetTable();
         }
 

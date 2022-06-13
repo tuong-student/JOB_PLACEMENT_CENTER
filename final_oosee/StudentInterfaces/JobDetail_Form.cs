@@ -47,6 +47,7 @@ namespace final_oosee
         {
             util.jobID = job.ID;
             util.jobName = job.jobName;
+            util.jobStatus = "None";
             //Already have util.studentID when login
             //Put jobID and StudentID to studentApplied table
             blStudentApplied = new BLStudentApplied();

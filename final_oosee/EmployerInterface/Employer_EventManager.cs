@@ -77,6 +77,8 @@ namespace final_oosee.EmployerInterface
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
+            int jobID = Convert.ToInt32(dgvJobEvent.CurrentRow.Cells[0].Value.ToString());
+            util.DeleteAppliedBasedOnJobID(jobID);
             manager.Delete();
             LoadData();
         }

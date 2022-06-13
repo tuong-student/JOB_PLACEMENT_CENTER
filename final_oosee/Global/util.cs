@@ -133,6 +133,42 @@ namespace final_oosee.Global
             return (studentApplied) jobManagemetDataContext.studentApplieds.Where(p => p.ID == studentAppliedID).Single();
         }
 
+        public static bool DeleteAppliedBasedOnStudentID(int stuID)
+        {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
+            var stQuery = from st in jobManagemetDataContext.studentApplieds
+                          where st.studentID == stuID
+                          select st;
+
+            jobManagemetDataContext.studentApplieds.DeleteAllOnSubmit(stQuery);
+            jobManagemetDataContext.SubmitChanges();
+            return true;
+        }
+
+        public static bool DeleteAppliedBasedOnJobID(int jobID)
+        {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
+            var stQuery = from st in jobManagemetDataContext.studentApplieds
+                          where st.jobID == jobID
+                          select st;
+
+            jobManagemetDataContext.studentApplieds.DeleteAllOnSubmit(stQuery);
+            jobManagemetDataContext.SubmitChanges();
+            return true;
+        }
+
+        public static bool DeleteJobBasedOnEmployerID(int emID)
+        {
+            JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
+            var job = from st in jobManagemetDataContext.JOBs
+                          where st.employerID == emID
+                          select st;
+
+            jobManagemetDataContext.JOBs.DeleteAllOnSubmit(job);
+            jobManagemetDataContext.SubmitChanges();
+            return true;
+        }
+
         public static List<studentApplied> SearchStudentAppliedBaseOnKeyWord(string keyWord, int jobID)
         {
             JobManagemetDataContext jobManagemetDataContext = new JobManagemetDataContext();
