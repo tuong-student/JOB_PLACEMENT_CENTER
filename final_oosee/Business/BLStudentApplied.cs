@@ -40,6 +40,7 @@ namespace final_oosee.Business
             stApplied.studentID = util.studentID;
             stApplied.jobID = util.jobID;
             stApplied.jobName = util.jobName;
+            stApplied.status = util.jobStatus;
 
             jobManagemetDataContext.studentApplieds.InsertOnSubmit(stApplied);
             jobManagemetDataContext.studentApplieds.Context.SubmitChanges();
